@@ -1,10 +1,18 @@
 import sys
-from model.Email import Email
+
 from visual.banner import print_banner
+
+from model.Email import Email
+
+from checks.url import check_urls
+
 def main(path_to_email):
-	# create email object
-	# parsed = Email(path_to_email)
+	
 	print_banner()
-	Email(path_to_email)
-		
+	
+	# create email object
+	email = Email(path_to_email)
+	check_urls(email)
+
+	
 main(sys.argv[1])
