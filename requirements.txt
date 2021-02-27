@@ -1,0 +1,3 @@
+pip install eml-parser
+pip install extract-msg
+pip install urlextract
