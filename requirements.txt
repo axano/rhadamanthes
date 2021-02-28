@@ -2,3 +2,5 @@ pip install eml-parser
 pip install extract-msg
 pip install urlextract
 pip install pysafebrowsing
+pip install pyhibp
+pip install colorama

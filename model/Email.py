@@ -1,7 +1,10 @@
 import datetime
 import json
 from urlextract import URLExtract
+import os
+import os.path
 
+from visual.prints import print_success, print_info, print_error, print_debug
 
 # msg
 import extract_msg
@@ -25,6 +28,7 @@ class Email:
 	date = ""
 	body = ""
 	header = ""
+	attachments = []
 	
 	# https://pypi.org/project/eml-parser/
 	# Needs testing
@@ -39,6 +43,7 @@ class Email:
 	# https://stackoverflow.com/questions/26322255/parsing-outlook-msg-files-with-python
 	# https://github.com/TeamMsgExtractor/msg-extractor
 	def parse_msg(self, path_to_email):
+		print_debug("Parsing msg...")
 		# extracts urls
 		extractor = URLExtract()
 	
@@ -50,8 +55,17 @@ class Email:
 		self.body = msg.body
 		self.header = msg.header
 		self.urls = extractor.find_urls(self.body)
-
+		# https://github.com/TeamMsgExtractor/msg-extractor/issues/88
+		self.attachments = msg.attachments
 		
+		# Library parsing msg file does not support custom saving paths for attachments so
+		# directory is changed manualy
+		os.chdir(os.path.dirname(__file__) + "/../temp")
+		
+		for a in self.attachments:
+			a.save()
+			
+		os.chdir(os.path.dirname(__file__) + "/../")
 		"""
 		for att in dir(msg):
 			print (att, getattr(msg,att))
@@ -63,7 +77,7 @@ class Email:
 		elif path_to_email.endswith(".msg"):
 			self.parse_msg(path_to_email)
 		else:
-			assert "Mail cannot be parsed"
+			assert print_error("Mail cannot be parsed")
 		
 		
 		

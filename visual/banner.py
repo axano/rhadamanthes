@@ -1,3 +1,7 @@
+# Colors
+from colorama import init
+from colorama import Fore, Back, Style
+
 def print_banner():
 	banner = """
   _____  _    _          _____          __  __          _   _ _______ _    _ ______  _____ 
@@ -8,4 +12,5 @@ def print_banner():
  |_|  \_\_|  |_/_/    \_\_____/_/    \_\_|  |_/_/    \_\_| \_|  |_|  |_|  |_|______|_____/ 
                                                                                            
                                                                                            """
-	print(banner)																						   
+	print(Fore.RED+Back.BLACK+banner)
+	print(Style.RESET_ALL, end = '')	
