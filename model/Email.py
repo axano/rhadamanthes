@@ -49,7 +49,7 @@ class Email:
 		self.subject = msg.subject
 		self.body = msg.body
 		self.header = msg.header
-		self.urls = extractor.find_urls(msg_message)
+		self.urls = extractor.find_urls(self.body)
 
 		
 		"""
