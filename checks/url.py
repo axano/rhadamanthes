@@ -1,11 +1,34 @@
 import requests
 import json 
 from pysafebrowsing import SafeBrowsing
-from visual.prints import print_success, print_info, print_error
+from visual.prints import print_success, print_info, print_error, print_debug, print_section
 import os.path
+from urllib.parse import urlparse
 
+# TODO 
 
-# TODO https://openphish.com/feed.txt
+CACHE = ""
+
+# This list is updated every day so it checks only
+# against recent threats
+def openphish(url):
+	global CACHE
+	
+	feed = "https://openphish.com/feed.txt"
+	
+	if CACHE == "":
+		print_debug("Cache is empty. Building cache...")
+		CACHE = []
+		response = requests.get(feed)
+		temp = response.text
+		for line in temp.splitlines():	
+			subdomain = urlparse(line).netloc
+			CACHE.append(subdomain)
+	
+	if urlparse(url).netloc in CACHE:
+		print_error("[OPENFISH] MALICIOUS URL FOUND: "+url)
+	else:
+		print_success("[OPENFISH] url is clean: "+url)
 
 def virustotal(url):
 
@@ -17,12 +40,14 @@ def virustotal(url):
 	'apikey': api_key,
 	'resource':url
 	}
-	# params = {'apikey': 'f55c7aa43fe06eda741a7590069c5ae62a04f71d189115958840d813b6dd825c', 'resource':'url'}
 	response = requests.get(api_url, params=params)
 	result = response.json()
-	print(result['positives'])
 	
-	return (result['positives'] > 0)
+	if result['positives'] > 0:
+		print_error("[VIRUS TOTAL] MALICIOUS URL FOUND: "+url)
+	else:
+		print_success("[VIRUS TOTAL] url is clean: "+url)
+	
 	
 # https://www.synology.com/en-global/knowledgebase/SRM/tutorial/Safe_Access/How_to_generate_Google_Safe_Browsing_API_keys		
 def google_safe_browsing(url):
@@ -40,14 +65,19 @@ def google_safe_browsing(url):
 	
 	# E.g {'http://malware.testing.google.test/testing/malware/': {'platforms': ['ANY_PLATFORM'], 'threats': ['MALWARE', 'SOCIAL_ENGINEERING'], 'malicious': True, 'cache': '300s'}}
 	# Will be either True or False
-	return (list(r.values())[0]['malicious'])
-	
+	if (list(r.values())[0]['malicious']):
+		print_error("[GOOGLE SAFE BROWSING] MALICIOUS URL FOUND: "+url)
+	else:
+		print_success("[GOOGLE SAFE BROWSING] url is clean: "+url)
 	
 def check_urls(email):
+	
+	print_section("URLS")
 	urls = email.urls
-	malicious = False
 	
 	for url in urls:
+		print_debug("Checking url: "+url)
 		# VT has a very strict api limit for urls 4/min
 		# print("VT: "+virustotal(url))
-		print_success("Google Safe: is "+url+" malicious: "+str(google_safe_browsing(url)))
+		google_safe_browsing(url)
+		openphish(url)

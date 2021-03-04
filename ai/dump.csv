@@ -1,0 +1,98 @@
+sender;date;subject;body;email_header (multiline);URLS
+"""Perselis, Emmanouil"" <Emmanouil.Perselis@ordina.be>";Sun, 28 Feb 2021 19:55:43 +0100;ritual;"assfgasdgfds
+
+";"Received: from PR3PR10MB4288.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:102:97::22)
+ by PR3PR10MB4221.EURPRD10.PROD.OUTLOOK.COM with HTTPS; Sun, 28 Feb 2021
+ 18:55:45 +0000
+Authentication-Results: ordina.be; dkim=none (message not signed)
+ header.d=none;ordina.be; dmarc=none action=none header.from=ordina.be;
+Received: from PR3PR10MB4221.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:102:a6::20)
+ by PR3PR10MB4288.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:102:97::22) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3890.20; Sun, 28 Feb
+ 2021 18:55:43 +0000
+Received: from PR3PR10MB4221.EURPRD10.PROD.OUTLOOK.COM
+ ([fe80::91e6:169f:3bfc:c41b]) by PR3PR10MB4221.EURPRD10.PROD.OUTLOOK.COM
+ ([fe80::91e6:169f:3bfc:c41b%5]) with mapi id 15.20.3890.028; Sun, 28 Feb 2021
+ 18:55:43 +0000
+Content-Type: application/ms-tnef; name=""winmail.dat""
+Content-Transfer-Encoding: binary
+From: ""Perselis, Emmanouil"" <Emmanouil.Perselis@ordina.be>
+To: ""Perselis, Emmanouil"" <Emmanouil.Perselis@ordina.be>
+Subject: ritual
+Thread-Topic: ritual
+Thread-Index: AdcOA0w3a7igvxbAT6Sa6THTV/tD/w==
+Date: Sun, 28 Feb 2021 18:55:43 +0000
+Message-ID: 
+ <PR3PR10MB4221A9789CAC070BC6FABBA7909B9@PR3PR10MB4221.EURPRD10.PROD.OUTLOOK.COM>
+Accept-Language: nl-NL, en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator: 
+ <PR3PR10MB4221A9789CAC070BC6FABBA7909B9@PR3PR10MB4221.EURPRD10.PROD.OUTLOOK.COM>
+MIME-Version: 1.0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-AuthSource: PR3PR10MB4221.EURPRD10.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-Originating-IP: [2a02:1811:b214:8000:4869:f22a:7a55:ca7b]
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 87bc8885-655b-475d-0618-08d8dc1a7370
+X-MS-PublicTrafficType: Email
+Return-Path: Emmanouil.Perselis@ordina.be
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Feb 2021 18:55:43.7615
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Office365-Filtering-Correlation-Id: 87bc8885-655b-475d-0618-08d8dc1a7370
+X-MS-TrafficTypeDiagnostic: PR3PR10MB4288:
+X-MS-Oob-TLC-OOBClassifiers: OLM:1728;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:PR3PR10MB4221.EURPRD10.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-AntiSpam-MessageData: 
+ =?us-ascii?Q?t3qtDb06sn89FQG/GM2WOfC+sYM4cABBT0HgD0gBl7E6l1amHIhHbZsYU2lU?=
+ =?us-ascii?Q?AHxvLaZPQy66OKRMO1j4TkBpvejfi0kNXpzzrQbYyt0dNiF8RxU8fmMl9uxp?=
+ =?us-ascii?Q?mdmlIVxwkhiJTWULglHIoiaL6Bn8NbrTGZ7Y+RUsVVg5cTE/wMcfWtZG/rHz?=
+ =?us-ascii?Q?uK+XJeMLg4i67YzdVhap+3aCITLWkFw4iUZEzBjul+k1rWpro+znLmjQP/mE?=
+ =?us-ascii?Q?x8QhO/bGAszIe4kQulB2u6AmlM+eJ3/CRl1npOCwTuZATkMbQHLDLEdg2N0S?=
+ =?us-ascii?Q?j8Os6ZAHWYoFPT99paRJpi30zN//FtuMhyCVSXqiG/yFGNRR+SITIze2xCNE?=
+ =?us-ascii?Q?49+V8XlKVtyBoxzmQD1QJt7aB0mMtjShM8FQA2AqQZcmD9BYlZh45oQxCviX?=
+ =?us-ascii?Q?E2jjKoCqpXrOr8RqDuewfaO8JSLbTEmz1Psib4oUU9MEwAGwRulMwfZgVZGS?=
+ =?us-ascii?Q?wKurW5pg5/c1Ag5gfUwIp9bZ1D8HnlvwE+K7iXUDvu3CnaVl7iEMFz8wNQW3?=
+ =?us-ascii?Q?mqG2iXFUkfPNvNR408lLyaUlzDal4Qw0Ujb7xaly8JsbRZGeRV7tzhRcmqX5?=
+ =?us-ascii?Q?As3TU9G5Txo7pKbFnBQNyP2A3aALPcFkWnTNLq2cUOcm/I1SfOnBhl5dMos9?=
+ =?us-ascii?Q?Zx/8ELwLhQSM+DKpYy+18/aYJhgVvtOlJKjUoHFkA0w4AFmpw7DyaLwgu+to?=
+ =?us-ascii?Q?57pM5I4+GGFMjO8rpQQtILGRfpvmwvoc/eFAOv6uqyhGtPXvYV3+BUaFlRiU?=
+ =?us-ascii?Q?DeDEZud1LoT+buDhMuZ7YRsCB7GJmpNDWy6bW4bSPZWprKqKWK7FqiZYzQ7F?=
+ =?us-ascii?Q?dR84Dx28aAKfuBLGbDOcvg4nqGdIK5i8VvdQ6rj5xKvCu3aV1CoPuYj0KnD3?=
+ =?us-ascii?Q?PC1e403SlG3S+HynYKPIgUGFPW0rXuoGhgX3xaGIyYdCX5/JOV7m2rJmsbW1?=
+ =?us-ascii?Q?PNiWCWoW0QjQahX+aXIcn/WCsTDuJNrA6iB7XH7AR0m9T62wTXW11LwINbPO?=
+ =?us-ascii?Q?KXGbYqssL1fcC+VjUA2LdfQbNr5J1c57rdUWeYvFzoZYqvifON3huM4wyIya?=
+ =?us-ascii?Q?Nl8r5ORSZ5EI10iAHcJM/7tHkuFQC2xE4X5efO2Ragdhs6Shc+EbbfODD9Po?=
+ =?us-ascii?Q?T99j9MUm3KxSjtW0RzYtSepXLjHLNK4W89YYKB7j1ETvmH9v0ycFpHiKr+F9?=
+ =?us-ascii?Q?87+fOYhADDu0eapWuE7KiYvj25Mt1oA0Wne4JZZ4NKQmO8nQELydZ1UTdLYT?=
+ =?us-ascii?Q?X7f/DUDONH5d7I2cxmoirZJMw3GhYtjNsrPKGo52akyHjTUHDTMeb7OsQedd?=
+ =?us-ascii?Q?stqtzncAhsn/pY6G4bXb11P2Vk+q+6CXgAIKSGCcIlofrJ2FLbozxjLCEgfr?=
+ =?us-ascii?Q?PEKWYnyVHBVS/op0GkLcGTRTsSz/?=
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Feb 2021 18:55:43.4597
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: a254b169-0a6b-47f9-af4c-169704421c2e
+X-MS-Exchange-CrossTenant-AuthSource: PR3PR10MB4221.EURPRD10.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-Network-Message-Id: 87bc8885-655b-475d-0618-08d8dc1a7370
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: UkruuI1EfqmKhPNnVYG2pcoJArehRQVYp5LwsLlQOyUThbnx3feLe7RPCWYuvrA8ArEk6D7LSvrfdaaA4HvYyT92i49jmVbODf1CL9nsMo8=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PR3PR10MB4288
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.5661291
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3890.028
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750129)(520011016)(706158)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info: 
+	ilPBcUUAdXMowbyC81w1UpuX64hLDNFYmqQacojnJYrqSJ9rGa2IsVT2crxUTNS+z2APhnEglP2+7yOx23Sy+hBH4aOYF41Sx+lCNbW7fZlwhQcaMdwEvYivzK91OZ1MBBpmrltSicur9h/0xF3iniwwZrAV5Bx59lkB2c7vEYdItGHPtnxKvKJe4/TFyxh0YsX4hi42J2qmH/UJNVEvqy5xEHUfOgLqMWL+vE+O9tyFpSm+lRy5WNWXnlaYGHtg9q+8uzPhaUZSLfY1NlbT/mczfOS2fGKFBm6GQjscfw9mBp8oiMgJR3j74JZm1yv7VycJdKAVC9Gsiznb8yI17wUoVfeED93fPvZKXLp+IJH/PWV1H2uUt2yXmIQfLtF/2xAvIvkMB7lUItV0+3mybsW8T09wNZkLGpA6CpTQ5VxXHWVhLtVQ815l3hjD+QatQ3ivtEQM7f3cjpFCm5jtHODmUMKK8SLswtidGzxIjPqzZrLfftmyeIJ18OR4BKxaeaV+HBwIK2pQllA8gtE2uGxEoKQo161c+51Kw69ePmY=
+date: Sun, 28 Feb 2021 19:55:43 +0100
+
+";[]

@@ -3,6 +3,8 @@ import json
 from urlextract import URLExtract
 import os
 import os.path
+import csv
+import glob
 
 from visual.prints import print_success, print_info, print_error, print_debug
 
@@ -70,6 +72,17 @@ class Email:
 		for att in dir(msg):
 			print (att, getattr(msg,att))
 		"""
+		
+	
+	def dump_to_csv(self):
+		with open(os.path.dirname(__file__) + "/../ai/dump.csv", 'w') as csv_file:
+			wr = csv.writer(csv_file, delimiter=';')
+			header = ['sender','date','subject','body','email_header (multiline)','URLS']
+			row = [str(self.sender), str(self.date), str(self.subject), str(self.body), str(self.header), str(self.urls)]
+			
+			wr.writerow(header)
+			wr.writerow(row)
+				
 	# Path can point to either eml or msg
 	def __init__(self, path_to_email):
 		if path_to_email.endswith(".eml"):
@@ -78,8 +91,11 @@ class Email:
 			self.parse_msg(path_to_email)
 		else:
 			assert print_error("Mail cannot be parsed")
+		self.dump_to_csv()
 		
 		
+	def __iter__(self):
+		return iter([self.sender, self.date, self.subject, self.body, self.header, self.urls, self.attachments])	
 		
 		
 		

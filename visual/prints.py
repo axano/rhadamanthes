@@ -1,5 +1,6 @@
 from datetime import datetime
 
+DEBUG = True
 # Colors
 # https://pypi.org/project/colorama/
 from colorama import init
@@ -22,10 +23,18 @@ def print_info(string):
 	print(Style.RESET_ALL, end = '')
 
 def print_debug(string):
-	print(Fore.CYAN+"[!] "+get_time()+" "+string)
-	print(Style.RESET_ALL, end = '')
+	global DEBUG
+	if DEBUG:
+		print(Fore.CYAN+"[!] "+get_time()+" "+string)
+		print(Style.RESET_ALL, end = '')
 	
 	
 def print_error(string):
 	print(Fore.RED+"[-] "+get_time()+" "+string)
 	print(Style.RESET_ALL, end = '')
+	
+def print_section(string):
+	print_info("*************************************************************")
+	print_info("\t\t\t\t"+string)
+	print_info("*************************************************************")
+	
