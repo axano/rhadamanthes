@@ -7,7 +7,7 @@ __pycache__/
 *.so
 keys/
 temp/
-temp/*
+temp/
 !temp/dummy.txt
 checks/api_keys.txt
 # Distribution / packaging
