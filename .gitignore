@@ -6,8 +6,6 @@ __pycache__/
 # C extensions
 *.so
 keys/
-temp/
-temp/
 !temp/dummy.txt
 checks/api_keys.txt
 # Distribution / packaging
