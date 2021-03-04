@@ -8,6 +8,7 @@ __pycache__/
 keys/
 temp/
 temp/*
+!temp/dummy.txt
 checks/api_keys.txt
 # Distribution / packaging
 .Python
