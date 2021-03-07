@@ -74,5 +74,5 @@ def debug(path_to_email):
 	end()
 
 
-#main(sys.argv[1])
-debug(sys.argv[1])
+main(sys.argv[1])
+#debug(sys.argv[1])
