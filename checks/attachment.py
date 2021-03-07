@@ -19,6 +19,11 @@ def get_files():
 	
 	path = os.path.dirname(__file__) + "/../temp/"
 	_, _, filenames = next(walk(path))
+	
+	if len(filenames) == 0:
+		print_info("No attachments found.")
+		return
+	
 	for file in filenames:
 		FILES.append(path+file)
 
@@ -32,7 +37,7 @@ def get_md5_hashes():
 	for f in FILES:
 		MD5_HASHES.append(hashlib.md5(open(f,'rb').read()).hexdigest())
 
-def analyze_hashes():
+def check_hashes():
 	global MD5_HASHES
 	
 	print_debug("Querying hashes on VT...")
@@ -47,6 +52,7 @@ def analyze_hashes():
 		url = "https://www.virustotal.com/api/v3/files/"+h
 		response = requests.get(url,headers=headers)
 		result = response.json()
+		# print_debug(str(result))
 		if response.status_code == 404:
 			print_success("Attachment was not found in VT database.")
 		else:
@@ -63,8 +69,8 @@ def analyze_hashes():
 		counter = counter + 1
 
 	
-def analyze_attachments():
+def check_attachments():
 	print_section("ATTACHMENTS")
 	get_files()
 	get_md5_hashes()
-	analyze_hashes()
+	check_hashes()

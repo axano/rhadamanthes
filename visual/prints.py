@@ -1,5 +1,5 @@
 from datetime import datetime
-
+import os, sys
 DEBUG = True
 # Colors
 # https://pypi.org/project/colorama/
@@ -7,7 +7,6 @@ from colorama import init
 from colorama import Fore, Back, Style
 
 init()
-
 
 
 def get_time():
@@ -34,7 +33,7 @@ def print_error(string):
 	print(Style.RESET_ALL, end = '')
 	
 def print_section(string):
-	print_info("*************************************************************")
-	print_info("\t\t\t\t"+string)
-	print_info("*************************************************************")
+	print_info("********************************************************************************")
+	print_info(string.center(80))
+	print_info("********************************************************************************")
 	

@@ -69,15 +69,30 @@ def google_safe_browsing(url):
 		print_error("[GOOGLE SAFE BROWSING] MALICIOUS URL FOUND: "+url)
 	else:
 		print_success("[GOOGLE SAFE BROWSING] url is clean: "+url)
-	
+
+def custom_checks(url):
+	suspicious_domains = [
+						'forms.office.com'
+						]
+						
+						
+	if urlparse(url).netloc in suspicious_domains:
+		print_error("[CUSTOM CHECKS] SUSPICIOUS URL FOUND: "+url)
+	else:
+		print_success("[CUSTOM CHECKS] url is clean: "+url)
+		
 def check_urls(email):
 	
 	print_section("URLS")
 	urls = email.urls
-	
+	if len(urls) == 0:
+		print_info("No URLS found.")
+		return
+		
 	for url in urls:
 		print_debug("Checking url: "+url)
 		# VT has a very strict api limit for urls 4/min
 		# print("VT: "+virustotal(url))
 		google_safe_browsing(url)
 		openphish(url)
+		custom_checks(url)

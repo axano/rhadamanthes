@@ -57,8 +57,12 @@ class Email:
 		self.body = msg.body
 		self.header = msg.header
 		self.urls = extractor.find_urls(self.body)
+		# Useless data
+		# self.main_properties = msg.mainProperties
+		
 		# https://github.com/TeamMsgExtractor/msg-extractor/issues/88
 		self.attachments = msg.attachments
+
 		
 		# Library parsing msg file does not support custom saving paths for attachments so
 		# directory is changed manualy
@@ -75,7 +79,7 @@ class Email:
 		
 	
 	def dump_to_csv(self):
-		with open(os.path.dirname(__file__) + "/../ai/dump.csv", 'w') as csv_file:
+		with open(os.path.dirname(__file__) + "/../ai/dump.csv", 'w', encoding="utf-8") as csv_file:
 			wr = csv.writer(csv_file, delimiter=';')
 			header = ['sender','date','subject','body','email_header (multiline)','URLS']
 			row = [str(self.sender), str(self.date), str(self.subject), str(self.body), str(self.header), str(self.urls)]
@@ -92,11 +96,3 @@ class Email:
 		else:
 			assert print_error("Mail cannot be parsed")
 		self.dump_to_csv()
-		
-		
-	def __iter__(self):
-		return iter([self.sender, self.date, self.subject, self.body, self.header, self.urls, self.attachments])	
-		
-		
-		
-

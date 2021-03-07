@@ -1,2 +1,0 @@
-check senders email in have i been pwned
-change url checker from totalvirus to other prob google safe browsing

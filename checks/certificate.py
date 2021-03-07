@@ -9,6 +9,9 @@ def check_certificates(email):
 	print_section("CERTIFICATES")
 	urls = email.urls
 
+	if len(urls) == 0:
+		print_info("No URLS found.")
+		return
 	
 	for url in urls:
 		print_debug("Checking certificate for url: "+url)
