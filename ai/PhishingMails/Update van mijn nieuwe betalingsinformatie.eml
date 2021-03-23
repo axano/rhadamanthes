@@ -1,0 +1,153 @@
+Received: from DB9PR10MB4490.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:10:221::13)
+ by DB8PR10MB2667.EURPRD10.PROD.OUTLOOK.COM with HTTPS; Thu, 17 Dec 2020
+ 05:25:32 +0000
+Received: from AM6PR05CA0015.eurprd05.prod.outlook.com (2603:10a6:20b:2e::28)
+ by DB9PR10MB4490.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:10:221::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3654.12; Thu, 17 Dec
+ 2020 05:25:31 +0000
+Received: from HE1EUR02FT050.eop-EUR02.prod.protection.outlook.com
+ (2603:10a6:20b:2e:cafe::c3) by AM6PR05CA0015.outlook.office365.com
+ (2603:10a6:20b:2e::28) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3654.12 via Frontend
+ Transport; Thu, 17 Dec 2020 05:25:31 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.160.176)
+ smtp.mailfrom=gmail.com; ordina.be; dkim=pass (signature was verified)
+ header.d=gmail.com;ordina.be; dmarc=pass action=none
+ header.from=gmail.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.160.176 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.160.176; helo=mail-qt1-f176.google.com;
+Received: from mail-qt1-f176.google.com (209.85.160.176) by
+ HE1EUR02FT050.mail.protection.outlook.com (10.152.11.209) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3676.22 via Frontend Transport; Thu, 17 Dec 2020 05:25:30 +0000
+Received: by mail-qt1-f176.google.com with SMTP id 7so19410181qtp.1
+        for <cindy.teughels@ordina.be>; Wed, 16 Dec 2020 21:25:30 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=9JGOlur8sN8LSyuIkfXYyN6I6mRbimbjCOMSadVc368=;
+        b=cEhHp6L7b8Kt53hZj/VHCoHgBdYCqsPUYIGW5rRiITVYWhDDphMaqkG6bOzFg4QMGt
+         YrURTbk1mW1FtRXWLTgj1PrnWYEBi9mSLdQugLKSMl0SLcuFJwskKDpBDBklOIjPe/R+
+         Babtr5rIjSK9ckgdDaf4lWnVwyXzI79harfnq10mrQQdzikxZkbPHsY14a0pHgu5oZR8
+         nspLhLFgU3UjpdUSOLDpmRXMQ9Yny8NVEs2gASsxe4TV/CB3xR7F3Dtoo7ZUX4JNMxLT
+         vTrm8CgMKXRPr4SK1vMhDwcniP8kdAOEsQJi4RPdz1iF/+gZmCPK478NQIkMPgsWDn/B
+         n7zQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=9JGOlur8sN8LSyuIkfXYyN6I6mRbimbjCOMSadVc368=;
+        b=idEmxY7lRNUwI8koZGXAoh1YMzdNta9fgpbmcmBJnz5vm/Eo2gji6FrrJ6m0O1HDoD
+         B+X+ERDyQzvAcdTM/B8IhRfL64bZW5T/eE+uogCzzDfS4Tyl76ScEoLljWyTEi8jTzy5
+         +tGbGePFaxfz8i9Q1XYi66eWKBERvDXQmCMphDbOqwx/D9NMosl9eL3SBTcqHlFun/ar
+         u+bqPTVx16tTZwgJs+NUP4guJHYqniMGSkIG/8r3AUfaf206QGh869Gb6ueSgdqac0h3
+         f9olMOQbFAp0PonD6c4VLlvh3WzF41oklsuip5fCjCCdPxHMgQUvFX+5BTOEbcwkwS8n
+         Am2A==
+X-Gm-Message-State: AOAM5319r1gCpZex7xLw1TjnLDQxsMfnGelOa8Ozmgv/+Cyx6iu2G/MF
+	ouRZjCFv+QyagADv/KRRG2xyT7NhcpJgQmxwgSaq2xRMyBvqrA==
+X-Google-Smtp-Source: ABdhPJz+y57QaPA8zbWJpweEcDZOJfpxCapn3VwPyWAk/bM900KQ/ygQL/hUrrnC/8ax+TQ5EY/7TvVnHCcaLlZQbHI=
+X-Received: by 2002:aed:3051:: with SMTP id 75mr46066659qte.64.1608182729322;
+ Wed, 16 Dec 2020 21:25:29 -0800 (PST)
+From: Wouter Tielemans <dsv2147@gmail.com>
+Date: Thu, 17 Dec 2020 13:25:14 +0800
+Message-ID: <CANnRoxu3nKdKsAZoa6jwLjWE=zhHmKX20dke9fOmfa+OhqAM2A@mail.gmail.com>
+Subject: Update van mijn nieuwe betalingsinformatie
+To: cindy.teughels@ordina.be
+Content-Type: multipart/alternative; boundary="00000000000050bbe705b6a23873"
+Return-Path: dsv2147@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 17 Dec 2020 05:25:30.9938
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ e78d65de-9d6d-4284-67d7-08d8a24c2bdb
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: a254b169-0a6b-47f9-af4c-169704421c2e:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ HE1EUR02FT050.eop-EUR02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: e78d65de-9d6d-4284-67d7-08d8a24c2bdb
+X-MS-TrafficTypeDiagnostic: DB9PR10MB4490:
+X-MS-Oob-TLC-OOBClassifiers: OLM:2089;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:209.85.160.176;CTRY:US;LANG:nl;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail-qt1-f176.google.com;PTR:mail-qt1-f176.google.com;CAT:NONE;SFS:(15650500001)(42186006)(1096003)(6916009)(7636003)(83380400001)(22186003)(7596003)(356005)(86362001)(33964004)(26005)(8676002)(76482006)(55446002)(75640400001)(336012)(58800400005)(6666004)(4006050)(2160300002)(73392003)(82202003)(5660300002);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 17 Dec 2020 05:25:30.9318
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e78d65de-9d6d-4284-67d7-08d8a24c2bdb
+X-MS-Exchange-CrossTenant-Id: a254b169-0a6b-47f9-af4c-169704421c2e
+X-MS-Exchange-CrossTenant-AuthSource:
+ HE1EUR02FT050.eop-EUR02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB9PR10MB4490
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.5305190
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3654.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?YmFCZTI5OURVZmZmbEJKaXFRZkx5K0lEK0xNelozWko5bkg4akg1MXVyMHdL?=
+ =?utf-8?B?c3BGaEdCVVFiRnhYN2RPd1FYSmNVM29aRCt6YlJ5V0RRVWE2Sk1UUDlzeUFI?=
+ =?utf-8?B?WksxSWFZRkhsSWJlV1N0VW1pdC9wNEd3QWYvRHduZ0c2emRDb3Z4cGVLVmFH?=
+ =?utf-8?B?VUFWTEZKdU5YTW8rdFEyY2xYWnJWODQwcUQ3NTU2bEI2OGoyM2ExRXNPUVVG?=
+ =?utf-8?B?eDB1MDlaelFKQ3JmNkxZcHY3bURGVTExRkt4MHBJRUxlS1FzNFVpUmpzNEVF?=
+ =?utf-8?B?L01Rd3FqL0RlcnlaK2NYNW9jRnlWTjhpNFdPV1NYZkZZY3MxVDVQd0FOeCt1?=
+ =?utf-8?B?M1pINkVwYlAzbmNPeXkwY2pFSFVTYk5ydElwUUx3dHJwYktRM3E4TEViL0lX?=
+ =?utf-8?B?blU0amhRd3RHTnVRTFhPT3RmYzNOSk8vUFA2MEdPdEFiRnBMU2VuNjRlbjBV?=
+ =?utf-8?B?WG9uYkQzYmducDBJaittR25lQnBOS0d5UFVrU2lyNHJGeWU2ZXB3d1hZS09E?=
+ =?utf-8?B?QlVGMW05NVZnQmkzNDRnY3JtMTE3bXU3Zk9IYklma0pFUnBEQzV4aEtKMXp0?=
+ =?utf-8?B?cktnZ1RVUTNwQTRvNzNwTTJ4cC9tR0M5VGlhaFJPc1ZQOGZHay9RZFRKcEYy?=
+ =?utf-8?B?NEZXZXZkQ1F3Q3lIVEJXd05mQWVZOGVpWlZnZnNyclg1S1gxV1REbjE1cDQ3?=
+ =?utf-8?B?Mll6V3FCSnY1cXdSYmZrN2g0SEQ5djJuUFdEc3ArdGd5SWhWZHcwWUZPcXll?=
+ =?utf-8?B?U2lIVGVuMEZrTnpXNGROaUtQOGZDODF2N2RscGFyVVdvaU5zM3FpZGZ4Qkh0?=
+ =?utf-8?B?L0hrUnFhbkpVQjBMbTBqQXRMcDZaejF4QXhZNUVhckg0aEdqdXptSERuRlha?=
+ =?utf-8?B?VU9jeFZMWjhndkVHVUtsTmY2cjNYUnZwYnpVK0xFaGcreVYrRTlJZm85aEUx?=
+ =?utf-8?B?bGYxOVRrZHJRd2xBRnR1ZWs0YjJKOS9CWjh0RHZJQnZXMUM2Q2k4N24ydTZY?=
+ =?utf-8?B?aHlBUkQwOXNFSjU4bDdNdDJtdFowaFkzOWxwNmh4Y0ErVWMycVJvY3JleDBJ?=
+ =?utf-8?B?KzAzbGZ5WENMQ2NRVzdYYldzQTVHMjlkS0lCaEFQOTMzZDEyTGpNanR3SUxm?=
+ =?utf-8?B?anpHS3k5R3lkd0gvOWMvODJyL2hVd3R2bjJ6RzJnUEtlRGE3eUlBOWhWOGE3?=
+ =?utf-8?B?TmIzN1RPaHB4RktWZjlaSTcxZWtOb2JCdWg3UDUzQWpYMFhhcmVYc3ZVVVM5?=
+ =?utf-8?B?cDI1VFgwUURvd3JmR0VkTCtuVXg3REdZU0VPQkFKcnJ4N3RYbmhjRSsxaFI3?=
+ =?utf-8?B?L1dsSVhsWFFOeDVpL0tveU5sekdRZmtUajVxMjdLejB0aG5HR1NuWkVKYURD?=
+ =?utf-8?B?am5EaXo0VnV2TGxRK1o4eS8yQ3BvN0F3cE9SVW5BSCtOUFF2a0hYTXN3bFdC?=
+ =?utf-8?B?Y2hZNGJlNU9tYitaWS9hK1MwaE1JVmE4dHRwOWpNdXN3RCs3WFRsM3ZqZHl2?=
+ =?utf-8?B?WnFqQVhCelloTGpRRmtNVlJqNTg4SjRlVmRlMTYyV3kyR0RmdGVCa0FRZSsr?=
+ =?utf-8?B?dTUzWmhXclBsTk5yWUFaSkpCb2tFSlNxVHllTFZNYlJyWlpGL254VzZDVnU3?=
+ =?utf-8?B?dURtQkhvaG9KV3gzakpaWEptV0I2NG1BVnFVdituT0hFRUhTTGdsc05NK21K?=
+ =?utf-8?B?VlJKR2xiWE00Zmh5UFFiVHVJb3NWMExUd3VnNHpVelBNSzRQbXVEbWFmd3V4?=
+ =?utf-8?B?b1VIa04ycnB0bUQ3eTZ6ZklNdmRvdzJYdi9KSVA1a0ptb1UyTEt6bXYzR0Ra?=
+ =?utf-8?Q?wofUOSTHfNrJYS9c06voHwzQE70RXpfyCRz5c=3D?=
+MIME-Version: 1.0
+
+--00000000000050bbe705b6a23873
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hallo Cindy Teughels,
+
+Goedemorgen en hoe gaat het vandaag. Ik hoop dat het goed gaat met je. Ik
+ben van bank veranderd en ik wil de details van mijn
+directe storting gewijzigd. Kan de wijziging ingaan v=C3=B3=C3=B3r de huidi=
+ge
+betalingsdatum? (Salaris in december) Bedankt.
+
+Vriendelijke groeten,
+Wouter Tielemans
+
+--00000000000050bbe705b6a23873
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr">Hallo Cindy Teughels,<br><br>Goedemorgen en hoe gaat het van=
+daag. Ik hoop dat het goed gaat met je. Ik ben van bank veranderd en ik wil=
+ de details van mijn<br>directe storting gewijzigd. Kan de wijziging ingaan=
+ v=C3=B3=C3=B3r de huidige betalingsdatum? (Salaris in december) Bedankt.<b=
+r><br>Vriendelijke groeten,<div>Wouter Tielemans&nbsp;<br></div></div>
+
+--00000000000050bbe705b6a23873--

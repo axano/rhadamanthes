@@ -1,0 +1,12 @@
+### DECISION TREE -- CREATED BY: ALEXANDER VAN NEVEL 
+
+MANUAL:
+
+processed emails in /bin/emails_test.txt
+
+$ cd decision tree
+$ make # Creates an executeable bin file in the /bin folder
+$ /bin/main # Use this command to run the executable file
+
+
+THANK YOU FOR READING

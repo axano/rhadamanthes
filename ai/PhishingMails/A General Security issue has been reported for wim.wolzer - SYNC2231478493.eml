@@ -1,0 +1,169 @@
+Received: from AM0PR10MB3522.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:20b:153::23)
+ by AM9PR10MB4166.EURPRD10.PROD.OUTLOOK.COM with HTTPS; Thu, 14 Jan 2021
+ 10:28:57 +0000
+Received: from AM5PR1001CA0029.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:206:2::42)
+ by AM0PR10MB3522.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:20b:153::23) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3763.10; Thu, 14 Jan
+ 2021 10:28:56 +0000
+Received: from AM5EUR02FT042.eop-EUR02.prod.protection.outlook.com
+ (2603:10a6:206:2:cafe::6f) by AM5PR1001CA0029.outlook.office365.com
+ (2603:10a6:206:2::42) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3763.9 via Frontend
+ Transport; Thu, 14 Jan 2021 10:28:56 +0000
+Received: from sgmmta22-fen.alpha-prm.jp (157.205.202.218) by
+ AM5EUR02FT042.mail.protection.outlook.com (10.152.9.106) with Microsoft SMTP
+ Server id 15.20.3742.6 via Frontend Transport; Thu, 14 Jan 2021 10:28:54
+ +0000
+Received: from sgmtsf03 ([157.205.230.83]) by sgmmta22.alpha-prm.jp
+          with ESMTP
+          id <20210114102852.TQSL4148.sgmmta22.alpha-prm.jp@sgmtsf03>
+          for <wim.wolzer@ordina.be>; Thu, 14 Jan 2021 19:28:52 +0900
+Received: from sgmiso02.alpha-prm.jp (sgmiso02-fen.alpha-prm.jp [157.205.230.98])
+	by sgmtsf03 (Postfix) with ESMTP id A8915380344
+	for <wim.wolzer@ordina.be>; Thu, 14 Jan 2021 19:28:52 +0900 (JST)
+Received: from sgmiso02.alpha-prm.jp (unknown [127.0.0.1])
+	by IMSVA (Postfix) with ESMTP id 9ACF75C04A
+	for <wim.wolzer@ordina.be>; Thu, 14 Jan 2021 19:28:52 +0900 (JST)
+Received: from sgmiso02.alpha-prm.jp (unknown [127.0.0.1])
+	by IMSVA (Postfix) with ESMTP id 8F17B5C041
+	for <wim.wolzer@ordina.be>; Thu, 14 Jan 2021 19:28:52 +0900 (JST)
+Received: from sgmmsa31.alpha-prm.jp (unknown [157.205.203.53])
+	by sgmiso02.alpha-prm.jp (Postfix) with ESMTP
+	for <wim.wolzer@ordina.be>; Thu, 14 Jan 2021 19:28:52 +0900 (JST)
+Received: from [185.215.151.54] by sgmmsa31.alpha-prm.jp with ESMTP
+          id <20210114102849.YTUH21222.sgmmsa31.alpha-prm.jp@[185.215.151.54]>
+          for <wim.wolzer@ordina.be>; Thu, 14 Jan 2021 19:28:49 +0900
+From: SVR - ERRX506 Delivery Request <sakai@obcc.co.jp>
+To: "Wolzer, Wim" <Wim.Wolzer@ordina.be>
+Subject: A General Security issue has been reported for wim.wolzer -
+ SYNC2231478493
+Thread-Topic: A General Security issue has been reported for wim.wolzer -
+ SYNC2231478493
+Thread-Index: AQHW6mAQ5c6DGX7uskS2kgr2dk8LYA==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Thu, 14 Jan 2021 11:28:44 +0100
+Message-ID: <8A066X0F-MKRZ-GIBE-7N5P-0TUYDCW40R2@obcc.co.jp>
+Content-Language: nl-BE
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AuthSource:
+	AM5EUR02FT042.eop-EUR02.prod.protection.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	266fc80e-bd10-4918-fcd1-08d8b87731e8
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+received-spf: SoftFail (protection.outlook.com: domain of transitioning
+ obcc.co.jp discourages use of 157.205.202.218 as permitted sender)
+x-ms-traffictypediagnostic: AM0PR10MB3522:
+x-ms-exchange-crosstenant-originalarrivaltime: 14 Jan 2021 10:28:54.3850 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Internet
+x-ms-exchange-crosstenant-id: a254b169-0a6b-47f9-af4c-169704421c2e
+x-ms-exchange-transport-crosstenantheadersstamped: AM0PR10MB3522
+x-ms-exchange-transport-endtoendlatency: 00:00:02.9104733
+x-ms-exchange-crosstenant-network-message-id:
+	266fc80e-bd10-4918-fcd1-08d8b87731e8
+authentication-results: spf=softfail (sender IP is 157.205.202.218)
+ smtp.mailfrom=obcc.co.jp; ordina.be; dkim=none (message not signed)
+ header.d=none;ordina.be; dmarc=none action=none
+ header.from=obcc.co.jp;compauth=softpass reason=202
+x-ms-office365-filtering-correlation-id: 266fc80e-bd10-4918-fcd1-08d8b87731e8
+x-ms-oob-tlc-oobclassifiers: OLM:4502;
+x-forefront-antispam-report:
+	CIP:157.205.202.218;CTRY:JP;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:sgmmta22-fen.alpha-prm.jp;PTR:sgmmta22-fen.alpha-prm.jp;CAT:NONE;SFS:(356005)(15650500001)(26005)(7636003)(58800400005)(7596003)(86362001)(6916009)(5660300002)(956004)(75640400001)(83380400001)(8676002)(40265005)(166002)(4744005)(33656002)(4006050)(2616005)(22186003)(1096003)(36756003)(6666004)(336012)(7066003);DIR:INB;
+x-microsoft-antispam: BCL:0;
+x-ms-exchange-processed-by-bccfoldering: 15.20.3763.009
+x-eopattributedmessage: 0
+x-eoptenantattributedmessage: a254b169-0a6b-47f9-af4c-169704421c2e:0
+x-ms-exchange-crosstenant-authas: Anonymous
+x-ms-exchange-crosstenant-authsource:
+	AM5EUR02FT042.eop-EUR02.prod.protection.outlook.com
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antisğam#MÍ…”µ%¹™¼è4($ôıÕÑ˜´àıı‰]TÁ5µ9¥4É5å5ahÕi	åHÍi¡Q]HÑTÉÑ…9!¡¹i±á))‘aI5ÕÁ5¹HÁQ\ÅLüô4(€ôıÕÑ˜´àııQ)
+]±9¡=ÁÍ…‘%9­İ0É‘%TÅ±1•å%…YÉM¤áéMYI
+]]Y-‘Y Á•­¡ÁTÁÁdüô4(€ôıÕÑ˜´àııI!iÑ•Q¡I=U±eQ±5YYYÁ‘ÅihÁÑAéTÉdÍ8ÉU!iÅ]!½áDÍÁ‰µ5İQµÑ½I±àüô4(€ôıÕÑ˜´àııQY‰±Á©DÅÀÑa Á…å…Q¬Õ¡HÁ4É9!$ÅŒÅ‘É‰U¡!UÑÁI´åUeéi…Méeİ…±IÈüô4(€ôıÕÑ˜´àıı•­°ÉQaiY ÑY±ÁiEYiå¹)É•Yeá5±åXÍY%…é‘á„ÉYÉY­Ñi‘°É]]á1YLå,üô4(€ôıÕÑ˜´àıı•¤å
+Y­ii,É‘áe´ĞÅQ!	QY9Ù=Å]QY-U¬àÕ5!	YY!‘ÙQ!	A‘±QI]YµIY½Èüô4(€ôıÕÑ˜´àııU´å=‰iAUÁahÅYY¹)á=åQ0Í‘ÑMYEÉˆÅ9QUYiÅ,Á¹5Q‘9U99hÅ¡‘é9Lüô4(€ôıÕÑ˜´àııE±Ii±¡Ù4Å±eYU¬Ñ,Å9Ia(Í]Yi)‘aa]¹	¹iUàÅ9Y9Å5YÕ5éIİ•TåMY8üô4(€ôıÕÑ˜´àııU±	
+‰±ÁE8ÉáÍeµI½Y!Ye…é±…TÕU±¡=I¹ÁÁ=ÉI±¡=‘9¥e±Ñ9U‘=¹)´üô4(€ôıÕÑ˜´àııi]ÕQa½İ…åÑ¡,ÉXÉQ¹9Q]Q(ÅQµÁİY]İáTÉ¡E=UÑ•U¼ÍI8ÅE­±¡Eµ)Y´Åhüô4(€ôıÕÑ˜´àıı‘­°ÍM±a5aÁİ…µ‘áY©•Yái­)E,Íi©i©Í]U‘9Q±Y5MU±5e©eå5©¡¥9Düô4(€ôıÕÑ˜´àııQœÁQ­±i0Á±¥5Í5µY‰UI½dÉ½å‰Ñ…eé)1•´åÕHÁÑ]IM…­œÑ‰U‘	IéÈüô4(€ôıÕÑ˜´àııM]±­]Y‰­Ñ-U±Y¡eQUédÅY…UQ	
+•©¡!É‘İQ]¡1dÍYAi!	éMYDÁ!I	M‘üô4(€ôıÕÑ˜´àııQ©¡)EéŒÅ•EáˆÉIIe±)aQUYYE]¡iM­8ÑÉ¼Õ9©Í=°Ñ•a	Ù4Í)ÁU­Á­HÍ±„üô4(€ôıÕÑ˜´àıı…¹I-•9ái]Ñi‘åYµÁ±ÀÉ‘Å…1éYYEQ‘¹EQ¡!Q±U4ÉiÕUhÍM©IÕ„ÍÁäüô4(€ôıÕÑ˜´àııœÑiUÁQ±­Ua±]dÅ­á5Y8ÅYåĞÙHÅÍ=UÉ8Á¹5µI5M¹Yé9Íİ…MÑ‰a± üô4(€ôıÕÑ˜´àıı]Å	Y±¡9=)
+U±4Å9ÁÉ8Í9­‰­ÑÙ‘µ$Íe©TÅ9]Á5…UiEiY‘Í¹Á8É°Å…©iüô4(€ôıÕÑ˜´àııQµåU´åUµÉiµİådÅYQ•±Á©ˆÁİQU‘…Uµ)¹YéAIU°ÍQ±hÁEéUTÍi9iQ‘Xüô4(€ôıÕÑ˜´àııŒÉEİ‰Y½å•Q]QÑ!]©ÕéhÕˆÉiaDÍ‘½eY	±‘Y]¹ÁY‰éŒÑi­dÕ]¹­á=]ÁØüô4(€ôıÕÑ˜´àıı•]Ye5EY±9äàÑ‰ÀÉI1é¡¡YÁY=ŒÑ]¹Á…ÁXÁ•¡aM´ÕµHÍ)©•Iüô4(€ôıÕÑ˜´àııI!%éUµ¡98ÁYAXÍ±ÍiU9¥‰µ±IM­ ÕéIQYµÉ]]­İiHÑi±(ÉŒÅÍMDÅIQ±èüô4(€ôıÕÑ˜´àııMEåäåÕ=!ÉUYÅ…©°Í=8ÕMMÑÕQU±Y5]ÕPÅiÅ‘åÑ•Q5Ù‰ÍÉ8ÉIY‘]Ñüô4(€ôıÕÑ˜´àıı5­ÀÁi©9Qa)UU±E­)¡]I%9E=ÔÍ99…‰I=¡é‰©dÑ•Y½İ…¹5İ•µY üô4(€ôıÕÑ˜´àıı9aM‰!EÉiY9-M±5…©)	I]DÕ]!İY!9Å=ÅeXÀÕ1QY¡…¼Åe­dÕYY	%iU‘àüô4(€ôıÕÑ˜´àııi¬åİ…YI!YÉ•Õe9!$Á•ÀÉTÁáÍ‰µTÕ‘!	A5QDÑ‰é°ÍMMÍİ9Y	©•¹Á±aüô4(€ôıÕÑ˜´àıı=‘áMÑ±=±U]IiLåİUÕ‰åYaI9‰U)¥5¹	ÑQ±MåU9¡Y=aÉhÅ±\üô4(€ôıÕÑ˜´àııeµÁMUÁ=¹a‰a¼ÕUQÉEé$ÅiY)-Q±IM!¡ÅeU)=‰¹i¥5á	‰YÁEMµÜÀüô4(€ôıÕÑ˜´àıı,É¡İYiÕQÑa…É©hÕDÉ9¡=Y9%hÀÅ]‘ÉI!‘Á…\Åµ•UIMUIEXÉÑ……±Øüô4(€ôıÕÑ˜´àııTÁ9½EµTÁdÍ9¹9]‘9E­I¥…ÕİhÁ(ÉQµÁ-UQ±½iXÍii!TÁÌÑU¥ÑIåÑÍ…±$üô4(€ôıÕÑ˜´àıı9iÍHÍ)é,ÅIeEİ…!µ,ÍÁe]Ñ,ÉiÙEa±é‰­Ñ¥LÁiá]¹iedÍ)	=!å…8Äüô4(€ôıÕÑ˜´àııLÅåE´åİM¹	)I]‘ÕMaEåi­Me±%áI©±Y5QI	…é9
+I±)……±iå‘éÅ]U‘1‘!ŒĞüô4(€ôıÕÑ˜´àııU¹¡-I±µI]QIEUÁá‘QIáM©XÁ5Q±±‘¹i	0É¡½HÈÕHÀÕÁ„Å	…YÑé•a°Äüô4(€ôıÕÑ˜´àıı9­Á=HÅ±ÉdÍ-MéÕ‘¬Õ)i!IİYµÑE­àÍ=!‘áI¤åÁ•aÁMI	•Y‘…ea9!U©dÌüô4(€ôıÕÑ˜´àııQé5]aœÑ‘µ½åQ­ÑÁ‘¹iéUµ‘A9]I1Y9Q±)¥YY±!YYié5a9ÙMEeaİ9)<üô4(€ôıÕÑ˜´àıı,ÍÙ…©DÁ‰a4ÅhÉáµLÉÁ…U±5]±i¡…©)ÉˆÁ8Í‰UÌÑ„ÀÅÕUQ4Á]¹	ÁiUdÅ•‘üô4(€ôıÕÑ˜´àıDıİUİ¹%1•Éµ1Õ­
+½‰é1YiIiµµ,üô4)
+½¹Ñ•¹ĞµQåÁ”èµÕ±Ñ¥Á…ÉĞ½…±Ñ•É¹…Ñ¥Ù”ì4(%‰½Õ¹‘…Éäô‰|ÀÀÁ|áÀØÙ`Á5-Ii%	İ8Õ@ÁQUe
+\ĞÁHÉ½‰½©Á|ˆ4)5%5µY•ÉÍ¥½¸è€Ä¸À4(4(´µ|ÀÀÁ|áÀØÙ`Á5-Ii%	İ8Õ@ÁQUe
+\ĞÁHÉ½‰½©Á|4)
+½¹Ñ•¹ĞµQåÁ”èÑ•áĞ½Á±…¥¸ì¡…ÉÍ•Ğô‰ÕÑ˜´àˆ4)
+½¹Ñ•¹ĞµQÉ…¹Í™•Èµ¹½‘¥¹œè‰…Í”ØĞ4(4)E½9
+œÁ-EÁU…±é%±é%ŒÉY©‘a)±%Å±ŒÍ9¡hÉUi´åå%!‘Á‰LÔÍˆÉàÙia%ÕE¼Å%İ
+É]a4)Éa‰]YéŒÉ¹ia5…ÉiM	¥i]YÕ%!)±ŒÍIå…]8Ái]Ei¹)Ù‰M	­i]áÁ‘µYå…\Õ¹%!IÙ%!±Ù‘a%œ4)…-Ñ‰µ1
+É\½
+Éae¹­5Láá9áå5%á%dÙ5©UÁÍ%±Ù‘M	©e\ÑÍ-Ñia‰
+É]±±İÄÄÍ%!I¼4)İÄÅ±Œá-ÑiM	½i-ÑµUe\Õ­%A
+É]¡Ùˆá-ÑŒÉa
+ÉMÍİÄÅ½e-Ñ‘
+	½İÄÅ¡5-Ña
+É\İ
+Éa5œ4)‘5-Ñ‰åÁİÄÅ½İÄÅ±İÄÅÑ1œÁ-EÁ	dÍIÁ‘µ°Á•Q½Y\Õ­i]áÁ‘µYåi]Ei\Å¡…]áé%iåˆÈÁDÈåÔ4)‘©‘Á-UµXÉ…]XÍ%Åea)¡‰¹IÁ‰µTá…!HÁ½Ù0Í)±dÍÕ‰]ĞÁ=QÕ‰µXÁ0É8Á‘åÑAQİ9À4)5
+iåATÕÅié	=…±°ÑQUIY5TÕIUé%µe¨Áİ)µ¼åQµÁ	ÀÅdÍÁAYéUéµ…èÅ=DÁáÙhÈáµ„Íœå5MiÈ4)‘Áá5¥iÉiÅ½‘!IİåUéeMUåi¥UåiµI¹i])á1µ9ée¤Õ¡!Ù$Í‘Á‰LÔÍˆÉàÙia)ˆÍ)­…\Õ¡1µ)°4)AœÁ-I±édÉá¡…\Å±©½Y¡Áå	±‰]Á‰
+	¡‰µE…aIé%9Ù‰¹I±‰¹Eea)±%9Ù‰µiÁiYÕ‘± 4)‰
+	¡‰µE…\ÔÁi\Õ­i]EŒÈåÍi]àÕ%iÙ¥Á…U‘a9±%åµ%!I½iM	¡iIåia9éi]UÕEÁˆÍÔ4)µ±¹…!EİÅ­5©å5
+E]áÍ%!)ÁhÉ Áå	åia9±¹i±iÑ9
+œôô4(4(´µ|ÀÀÁ|áÀØÙ`Á5-Ii%	İ8Õ@ÁQUe
+\ĞÁHÉ½‰½©Á|4)
+½¹Ñ•¹ĞµQåÁ”èÑ•áĞ½¡Ñµ°ì¡…ÉÍ•Ğô‰ÕÑ˜´àˆ4)
+½¹Ñ•¹Ğµ%è€ñ
+ÌÕĞÉÀÉÄÑ	ÌàÌÁåÜÌÌÉUIAIÄÀ¹AI=¹=UQ1==,¹
+=4ø4)
+½¹Ñ•¹ĞµQÉ…¹Í™•Èµ¹½‘¥¹œè‰…Í”ØĞ4(4)A Á‰]Ü­E¼á…Y¡iÑ9
+©áÑiaI¡% Á‘!ÑiaÅ…adå%­9Ù‰¹I±‰¹EÑY!±İiM%dÈåÕ‘YÕ‘Á¤4)‘XÑ‘å½‘ÅÍ=å	©…åŒÉXÁAaXÁi¤ÀÑ%¨Ñ9
+©İÙ…Y¡iÑ9
+©á¥ˆÉHÕ%!8Á•]á±AM(ÍˆÍ)­1a‘ä4)eaÙ%)åi]É1a‘ÙµDİ%ÄÍi])É…aEÑ‰µ)éÅÑˆÉI±=¥	é©iQÍ‰±ÕiLÅ¥µY¡…é½e]hÀ4)ia%ÑÉ¡Á‘UÑŒÍ	¡dÉTİ%¨Ñ9
+©àÁe])ÍiM	é‘!±ÍiPÁ¥i´åÕ‘ÄÉea)Áe\ÔÁ1\ÔÅ‰]Yå…]4Ù%±Ô4)…Yå…aDİ%iÙ‰¹EÑ‘µå…]Õ‘Å±ea8Á1]é…]Õ=¥	Á‰µ¡±µ°Á=å	µˆÈÔÁ1a8ÁµXÁdÉœÙ%±Ô4)…Yå…aDİ%iÙ‰¹EÑŒÉ°ÙiQ½5QIİ•Í‰±ÕiLÅ½i]±¹…!DÙ%±Õ…Yå…aDİ%iÙ‰¹EÑiµÑ…]àÔ4)=¥	¡µ±¡‰
+İŒÉYå…]eÍ%YÑˆÉÁÁI´åÕ‘ÍdÈåÍˆÍ$Ù%!)¹e¥œÉ9Mİ9©UÍ%dÅ-QÍˆÍ)İ…Ô4)é½5©ÍÉ±­ˆÍ‘é=¥å=å	¥e]9ÉhÍ)Ù‘\Õ­1]9Ù‰åå=¥	åhÉ%½5©TÅ1
+å9QUÍ%$Å9M¬İ%!‘À4)i!I½=¥Á9Q	İ•Íe´ååiYå1]9Ù‰á¡!9±=¥	©ˆÉáÍea	éiQÍ¥AœÁ-A!I¥ˆÉHÕAœÁ-A!IåAœÁ,4)A!I­AœÁ-A!I¡eµá±%!8Á•]á±AM)µˆÈÔÁ1]i¡‰]±Í•Q½…\Õ½ia)Á‘Íi´åÕ‘Åé…aÁ±=¥	Á‰µ¡°4)µ°Á=å	µˆÈÔÁ1a8Á•]á±=¥	Á‰µ¡±µ°Á=å	µˆÈÔÁ1ai¡µ±¡‰¹EÑdÉİé½…\Õ½ia)Á‘Íi´åÔ4)‘Åé‘!)±‘9½=¥	Á‰µ¡±µ°Á=å	Í…\Õ±1]¡±…]‘½‘½…\Õ½ia)Á‘ÍÉ±­‘œÙ%DÅ5!Ñ=å	Ü4)e]I­…\Õ¹=¥á5!Ñ%İ!5©	İ•Íe´ååiYå=¥á!ŒÈåÍ…]Eµ‘¥-%İ9
+İ5©Á1
+ä4)5EÁ=å$­E¼á‘)Ùi!¬­E¼á‘!$­E¼á‘D­E¼ái°É%±­AM)Íea±±©¥%!8Á•]á±AM)µˆÈÔÀ4)1]i¡‰]±Í•Q½)¹ÅˆÍDİTÉY¹ˆÉUYU­µaYÙ‘ÍÍ%Å¡!	ÍiLÅé•a8Ái\ÁÍ%)Ùe´äÁ‰åİEa)À4)e]İÍ%!9¡‰¹5ÑŒÉYå…]eÍ%!9±µ±µ1
+	‰\åÅ…UiÙ‰¹Dİ%!‘Ái!I½=¥Å5!Ñ=å	½i]±¹…!DÙ%‘Ü4)•Í•¤ÅÁ‰µI±•½5QÍ‰Yµ‘½9aÑ=åÁˆÍÙ%Yİ•Í¥AœÁ-A!I¡eµá±%)ÙµI±¨Á¥5
+%œ4)É±­‘œå%©İ5
+U¥AœÁ-A!I¥ˆÉHÕAœÁ-A!IåAœÁ-A!I­%)¹dÈåÍˆÍ$å%¥9µ9©Y­5éU¥%¡±…]‘¼4)‘Á¥9Q±%¨Ñµ‰µ)éÌá0ÍI­AœÁ-A!I­%)¹dÈåÍˆÍ$å%¥4Ñ5])¥5U¥A¥iÕe¹9İ=éİÙ‘D­E¼à4)0ÍIåAœÁ-A!IåAœÁ-A!I­%)¹dÈåÍˆÍ$å%¥5İ9Åi©¥A¥iÕe¹9İ=éİÙ‘D­E¼á‘Eeµ‘©ˆÉáØ4)¨Á¥$Éiµeµİ9å$­)´Õ¥ŒÍİAäÁiÑ9
+©İÙ‘!$­E¼á0ÍI¥ˆÉHÕAœÁ-AäÁe])ÍiPÑ9
+©İÙi°È4)AœÁ-A!9İe\ÑŒÍHÕ‰Tå%µiÙ‰¹EÑiµÑ…]àÕ=¥µaYÙ‘ÑQi]‘ÙiM	YMMiá‘\äÁ=åİ1]İá°4)1a8ÕŒÍI±‰MİU´å¥ˆÍIÙ1
+		µ±¡‰
+İŒÉÕäÅéia)Ái¥İŒÉYå…]eÍ%YÑˆÉÁÁI´åÕ‘Íi´åÔ4)‘Åé…aÁ±=¥	Ñi]IÁ‘\Àİ%¨Ñµ‰µ)éÍ)´Õ¥ŒÍİ%
+iÕe¹9İ=åµ‰µ)éÍ)´Õ¥ŒÍİ%
+iÕe¹9Ü4)=åµ‰µ)éÌá0Í9İe\Ğ­A)å%!8Á•]á±AM)µˆÈÔÁ1]i¡‰]±Í•Q½)¹ÅˆÍDİTÉY¹ˆÉUYU­µaYØ4)‘ÍÍ%Å¡!	ÍiLÅé•a8Ái\ÁÍ%)Ùe´äÁ‰åİEa)Áe]İÍ%!9¡‰¹5ÑŒÉYå…]eÍ%!9±µ±µ1
+	‰\åÄ4)…UiÙ‰¹Dİ%¨Ñ9
+©İÙ‘D­E¼á‘Ee]áÁhÈĞå%¹)ÁhÉ Á%¨Ğáe¹$­E¼á0ÍI­AœÁ-AäÁ¨Ñ9
+©àÀ4)¨Ñ9
+©àÁi
+	©ˆÉáéÕAM%å%¨Ñ9
+©àÁe])ÍiM	é‘!±ÍiPÁ¥i´åÕ‘Åµe\ÅÁ‰!¬Ù%±Õ…Yå…aDÜ4)%iÙ‰¹EÑŒÉ°ÙiQ½…\Õ½ia)Á‘Íi´åÕ‘Åé‘!±ÍiQ½…\Õ½ia)Á‘Íi´åÕ‘ÄÉea)Áe\ÔÁ1]9 4)!4Ù%±Õ…Yå…aDİ%iÙ‰¹EÑŒÍIåiaI©…½…\Õ½ia)Á‘Í‰±ÕiLÅ½i]±¹…!DÙ%±Õ…Yå…aDÜ4)%9Ù‰åå=¥	¥‰©…éÍ­i±ÕiäÄÁˆÍÙ%%İ!œİ%!	¡iIÁ‰µÑ‰Yµ‘½5©	İ•Í¥AœÁ,4)A!I¥ˆÉHÕAœÁ-A!IåAœÁ-A!I­A©áµˆÈÔÁ%i¡dÉTå%­å…]Í%¨ÕU…±é%±é%ŒÉY©‘a)±%Å°4)ŒÍ9¡hÉUi´åå%!‘Á‰LÔÍˆÉàÙia%ÕAåµˆÈÔÁA©İÙ‘D­E¼á0ÍIåAœÁ-A!IåAœÁ-A!I­%!8Á•]á°4)AM)İe]I­…\Õ¹1aIÙ½5Q	İ•Í¥A©áµˆÈÔÁ%i¡dÉTå%­å…]Í%¨ĞÅ%İ
+É]a
+Éa‰]YéŒÉ¸4)ia5…ÉiM	¥i]YÕ%!)±ŒÍIå…]8Ái]Ei¹)Ù‰M	­i]áÁ‘µYå…\Õ¹%!IÙ%!±Ù‘a%…-Ñ‰µ1
+É\½4)Éae¹­5Láá9áå5%á%dÙ5©UÁÍ%±Ù‘M	©e\ÑÍ-Ñia‰
+É]±±İÄÄÍ%!I½İÄÅ±Œá-ÑiM	¼4)i-ÑµUe\Õ­%A
+É]¡Ùˆá-ÑŒÉa
+ÉMÍİÄÅ½e-Ñ‘
+	½İÄÅ¡5-Ña
+É\İ
+Éa5‘5-Ñ‰åÁİÄÅ¼4)İÄÅ±İÄÅÑ1©á¥¨Ñ9
+©á¥¨Ñ9
+©áµˆÈÔÁ%9Ù‰ååAM%©iµeå9©İ%¨Õ	dÍIÁ‘µ°Á•Q½Y\Õ­i]áÀ4)‘µYåi]Ei\Å¡…]áé%iåˆÈÁDÈåÕ‘©‘İÙi´åÕ‘Ğá0ÉiÙ‰¹D­AäÁiÑ9
+©İÙ‘!$­E¼á‘!$¬4)E¼á‘EŒÍHÕ‰Tå%¹	¡iIÁ‰µÑ‘åİ=¥é5!Ñ=å$­AiÙ‰¹EŒÍHÕ‰Tå%´Å¡µ‘Á‰©½5!Ğ4)=å	İe]I­…\Õ¹=¥İ!œİ%)ÙµI±©½5!Ñ=å	µˆÈÔÁ1ai¡µ±¡‰¹EÑ‰±¹eaHÅµYé=¥	Á‰µ¡°4)µ°Á=å	µˆÈÔÁ1ai¡µ±¡‰¹EÑåé…aIÁˆÈĞÙ%±Õ…Yå…aDİ%iÙ‰¹EÑ‘µå…]Õ‘ÅÕ‘\Å±µ±¨4)=¥	Á‰µ¡±µ°Á=å	µˆÈÔÁ1ai¡µ±¡‰¹EÑe]àÁia)ÕeaI±é½…\Õ½ia)Á‘Íi´åÕ‘ÄÉea)Áe\ÔÀ4)1]Y¡ŒÍEÑea9Áe\ĞÙ%±Õ…Yå…aDİ%iÙ‰¹EÑŒÍIåiaI©…½…\Õ½ia)Á‘Í‰±ÕiLÅ½i]±¹…!DØ4)%±Õ…Yå…aDİ%!i±¹IÁdÉÍ1]Í…]‘Õ=¥	¥ea9±‰±ÕiQÍi´åÕ‘Åé…aÁ±=¥á=!Ñ=å%iµ¨4)iPÁ¥Ea)Áe]İ¥A©á¡%¡åi]då%µ Á‘!Ù1äååi]9İ1´ÅÉ‘­á1´Õ±‘å©‘!D½‰PÀÑ5Eİ9µe\ÅÜ4)<Í$åQµÁ¹5ÕÅ]a¡9IUáQ±Q5¥i¡‰aİe¨Áİ)µÑÑÅATÕÅEa‘9I8ÙPÅI¹4Å5İ)µÑÑÉATÕ4)Qå¹‰åi¡‰aİ„Íœå5Mi¡‰aİ„ÍDå5Q%µe\Åİ<ÉÑ­A] Á‘!	é)Q9¡)Q)µ)Q)µi‘±e¹ÕdÍ9¥1µÜ4)á©É±Ñ1¹‘Ù‰!Á±­	ÙµIÁ‰µÕeµU¥%!I¡µ‘±‘Á¥`É)Íe\ÕÉ%¥	åi]Üå%´ÕÙˆÍ	±‰µYå%ÕØ4)µYµia)åia%¥%I¡‘ÑeaXÁ…Á¥Q´äÁEa	İ‰±©e])ÍiM%ŒÍHÕ‰Tå%µ9Ù‰åå=¥	åhÉ%½5QÔ4)1
+á5Q­Í%á=M¬İ%iÙ‰¹EÑ‘µå…]Õ‘Å©ea	é=¥	Á‰µ¡±µ°Á=å	Ñea)¹…\ĞÙ%	İ•Í¬4)i±Õié½5!Ñ=å	¥ˆÍ)­ia$Ù%	İ•Íi´åÕ‘ÄÉea)Áe\ÔÁ1]áÁhÉÁ‘a)±é½…\Õ½ia)Á‘Íœ4)i´åÕ‘ÄÉea)Áe\ÔÁ1a	ÙŒÉ°Á…\åÕ=¥	Á‰µ¡±µ°Á=å	µˆÈÔÁ1ai¡µ±¡‰¹EÑ‰¹YÑia)Áeé½…\Õ¼4)ia)Á‘Íi´åÕ‘ÄÉea)Áe\ÔÁ1]Í‘Yå‰µÁia4Ù%±Õ…Yå…aDİ%iÙ‰¹EÑ‘µå…]Õ‘Å±ea8À4)1]é…]Õ=¥	Á‰µ¡±µ°Á=å	µˆÈÔÁ1a8ÁµXÁdÉœÙ%±Õ…Yå…aDİ%áÁ‰µUÑ…YÁhÉ Á=¥	Á‰µ¡°4)µ°Á=åÉia(Á…]9¡‰Å¡‰±¹‰©½eµéi]áÁ‰µTİ%¨ÕMiaiÁia9
+¥	I‘]åe\ÔÁ…\Õ±Aå¡A©İØ4)i´åÕ‘Ğá0ÍI­AœÁ-AäÁ¨Ñ9
+©İÙ‘)Ùi!¬­E¼á0ÍI¡eµá±AœÁ-AäÁiÑ9
+©İÙ‘!$­E¼á0ÍI¤4)ˆÉHÕAœÁ-AäÁe])ÍiPÑ9
+©İÙ‘D­E¼á0ÍIåAœÁ-A!IåAœÁ-A!I­%!8Á•]á±AM)©ˆÉáÙ©½µ‘¤4)-Í5
+İ5Qİ1
+á9éÁ=å	µˆÈÔÁ1a9Á•µTÙ%å!œİ%!	¡iIÁ‰µÑ‘åİ=¥á5!Ñ=å$­A$¬4)I±édÉá¡…\Å±©İÙe¨ĞÙ)´Õ¥ŒÍİY¡Áå	±‰]Á‰
+	¡‰µE…aIé%9Ù‰¹I±‰¹Eea)±%9Ù‰µiÀ4)iYÕ‘±¡‰
+	¡‰µE…\ÔÁi\Õ­i]EŒÈåÍi]àÕ%iÙ¥Á…U‘a9±%åµ%!I½iM	¡iIåia9éi]UÔ4))´Õ¥ŒÍİAäÁiÑ9
+©İÙ‘!$­E¼á‘!$­E¼á‘EŒÍHÕ‰Tå%µ9Ù‰åå=¥	åhÉ%½5Qİ1
+á9éÌ4)%Í5
+¬İ%iÙ‰¹EÑŒÉ°ÙiQ½5Q)İ•Í­i±ÕiäÄÁˆÍÙ%İ!œİ%¨ÕˆÍÕµ±¹…!EİÅ­œ4)5©å5
+µ‰µ)éÑ	‰İµ±¹…!Ié%!)±ŒÉYå‘µY­1©İÙ‘D­E¼á0ÍIåAœÁ-AäÁe´å­•PÑ9
+©İØ4)‘¥‰T­E¼á0É)Ùi!¬­E¼á0É Á‰]Ü­E¼ô4(4(´µ|ÀÀÁ|áÀØÙ`Á5-Ii%	İ8Õ@ÁQUe
+\ĞÁHÉ½‰½©Á|´´4(
