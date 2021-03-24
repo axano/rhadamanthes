@@ -56,7 +56,7 @@ int main()
     std::vector<std::string> questions;
     std::list<std::string> emails;
     std::vector<std::map<std::string, bool>> answers;
-    readQuestions("emails_test.txt", questions, emails, answers);
+    readQuestions("tree_data.txt", questions, emails, answers);
 
     std::cout << "Loaded " << questions.size() << " questions" << std::endl;
     //for (auto it = questions.begin(); it != questions.end(); it++){
