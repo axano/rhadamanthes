@@ -6,6 +6,8 @@ processed emails in /bin/emails_test.txt
 
 $ cd decision tree
 $ make # Creates an executeable bin file in the /bin folder
+  OR IF IT DOES NOT WORK:
+  $ g++ -Wall -Wextra -std=c++17 -ggdb -Iinclude -Llib src/main.cpp -o bin/main
 $ /bin/main # Use this command to run the executable file
 
 
