@@ -130,3 +130,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# macOS filesystem junk
+.DS_Store
+.metadata
