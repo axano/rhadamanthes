@@ -1,0 +1,15 @@
+DONE 1. Checks if the email body contains HTML content.
+2. The number of URLs consisting of hexadecimal characters in the email. 
+3. The number of domains in the URLs that exists in the email.
+4. The number of URLs whose label is different from its anchor in the email.
+DONE 5. The maximum number of dots that exist in a URL in the email.
+DONE 6. Checks if the email contains the term “Account”
+DONE 7. Checks if the email contains the term “Dear”
+DONE 8. The number of image URLs.
+DONE 9. The number of URLs whose domain is specified as an IP address.
+DONE 10. Checks if the email contains the term “PayPal”
+DONE 11. Checks if the email contains the term “Login”
+DONE 12. Checks if the email contains the term “Bank”
+DONE 13. Checks if the email contains the term “Verify”
+DONE 14. Checks if the email contains the term “Agree”
+DONE 15. Checks if the email contains the term “Suspend”
