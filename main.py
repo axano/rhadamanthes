@@ -23,6 +23,9 @@ from checks.email import check_email_headers_and_dmarc
 def initialize():
 
 	print_banner()
+	if len(sys.argv) < 2:
+		print_error("Usage: python main.py \"Path to msg or eml\"")
+		exit(1)
 	print_section("START")
 	print_success("Script started.")
 
@@ -37,10 +40,11 @@ def end():
 	print_success("Script ended succesfully.")
 
 
-def main(path_to_email):
+def main():
 
 	initialize()
 	# create email object
+	path_to_email = sys.argv[1]
 	email = Email(path_to_email)
 	check_urls(email)
 	check_certificates(email)
@@ -55,13 +59,14 @@ def main(path_to_email):
 
 
 
-def debug(path_to_email):
+def debug():
 	global DEBUG
 	DEBUG = True
 	visual.prints.DEBUG = DEBUG
 
 	initialize()
 	# create email object
+	path_to_email = sys.argv[1]
 	email = Email(path_to_email)
 
 	check_urls(email)
@@ -74,5 +79,5 @@ def debug(path_to_email):
 	end()
 
 
-main(sys.argv[1])
-#debug(sys.argv[1])
+main()
+#debug()
