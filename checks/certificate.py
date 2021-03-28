@@ -12,7 +12,7 @@ def check_certificates(email):
 	if len(urls) == 0:
 		print_info("No URLS found.")
 		return
-	
+
 	for url in urls:
 		print_debug("Checking certificate for url: "+url)
 		if url.startswith("https"):
@@ -28,8 +28,10 @@ def check_certificates(email):
 					issued_by = issuer['organizationName']
 					if issued_by == "Let's Encrypt":
 						print_error("CERTIFICATE FOR URL "+url+" IS ISSUED BY LETS ENCRYPT.")
+					else:
+						print_success("CERTIFICATE FOR URL "+url+" IS OK.")
 				except:
 					print_error("URL "+url+" IS UNREACHABLE")
-				
+
 		else:
 			print_error("URL "+url+" DOES NOT USE HTTPS.")

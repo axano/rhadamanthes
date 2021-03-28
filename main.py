@@ -21,12 +21,12 @@ from checks.email import check_email_headers_and_dmarc
 
 
 def initialize():
-	
+
 	print_banner()
 	print_section("START")
 	print_success("Script started.")
-	
-	
+
+
 	files = glob.glob(os.path.dirname(__file__)+"/temp/*" )
 	for f in files:
 		os.remove(f)
@@ -35,10 +35,10 @@ def initialize():
 def end():
 	print_section("END")
 	print_success("Script ended succesfully.")
-	
-	
+
+
 def main(path_to_email):
-	
+
 	initialize()
 	# create email object
 	email = Email(path_to_email)
@@ -46,31 +46,31 @@ def main(path_to_email):
 	check_certificates(email)
 	check_attachments()
 	check_email_headers_and_dmarc(email)
-	
+
 	# AI starts here
-	os.system()
+	# os.system()
 	end()
-	
-	
-	
-	
-	
+
+
+
+
+
 def debug(path_to_email):
 	global DEBUG
 	DEBUG = True
 	visual.prints.DEBUG = DEBUG
-	
+
 	initialize()
 	# create email object
 	email = Email(path_to_email)
-	
-	# check_urls(email)
-	# check_certificates(email)
-	# check_attachments()
+
+	check_urls(email)
+	check_certificates(email)
+	check_attachments()
 	check_email_headers_and_dmarc(email)
-	
+
 	# AI starts here
-	
+
 	end()
 
 

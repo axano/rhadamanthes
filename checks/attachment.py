@@ -1,5 +1,5 @@
 import requests
-import json 
+import json
 import hashlib
 from os import walk
 
@@ -14,39 +14,39 @@ FILES = []
 
 def get_files():
 	global FILES
-	
+
 	print_debug("Getting attachments...")
-	
+
 	path = os.path.dirname(__file__) + "/../temp/"
 	_, _, filenames = next(walk(path))
-	
+
 	if len(filenames) == 0:
 		print_info("No attachments found.")
 		return
-	
+
 	for file in filenames:
 		FILES.append(path+file)
 
-	
+
 
 def get_md5_hashes():
 	global FILES
 	global MD5_HASHES
-	
+
 	print_debug("Calculating md5 hashes...")
 	for f in FILES:
 		MD5_HASHES.append(hashlib.md5(open(f,'rb').read()).hexdigest())
 
 def check_hashes():
 	global MD5_HASHES
-	
+
 	print_debug("Querying hashes on VT...")
 	keys_file = open(os.path.dirname(__file__) + "/../keys/virus_total.txt")
 	lines = keys_file.readlines()
-	api_key = lines[0].rstrip() 
-	
+	api_key = lines[0].rstrip()
+
 	headers = {'x-apikey' : api_key}
-	
+
 	for h in MD5_HASHES:
 		counter = 0
 		url = "https://www.virustotal.com/api/v3/files/"+h
@@ -65,10 +65,13 @@ def check_hashes():
 				vendor_count = vendor_count + 1
 				if vendors[vendor]['category'] == "malicious":
 					malicious = malicious + 1
-			print_error("ATTACHMENT "+FILES[counter]+" WITH MD5 HASH "+h+" IS FLAGGED BY "+str(malicious)+" OUT OF THE "+str(vendor_count)+" VENDORS.")
+			if malicious > 0:
+				print_error("ATTACHMENT WITH MD5 HASH "+h+" IS FLAGGED BY "+str(malicious)+" OUT OF THE "+str(vendor_count)+" VENDORS.")
+			else:
+				print_success("ATTACHMENT WITH MD5 HASH "+h+" IS FLAGGED BY "+str(malicious)+" OUT OF THE "+str(vendor_count)+" VENDORS.")
 		counter = counter + 1
 
-	
+
 def check_attachments():
 	print_section("ATTACHMENTS")
 	get_files()
