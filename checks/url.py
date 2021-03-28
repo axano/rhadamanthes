@@ -6,7 +6,8 @@ import os.path
 from urllib.parse import urlparse
 
 # TODO 
-
+# https://github.com/PaulSec/API-netcraft.com
+# from NetcraftAPI import NetcraftAPI
 CACHE = ""
 
 # This list is updated every day so it checks only
@@ -65,6 +66,7 @@ def google_safe_browsing(url):
 	
 	# E.g {'http://malware.testing.google.test/testing/malware/': {'platforms': ['ANY_PLATFORM'], 'threats': ['MALWARE', 'SOCIAL_ENGINEERING'], 'malicious': True, 'cache': '300s'}}
 	# Will be either True or False
+	
 	if (list(r.values())[0]['malicious']):
 		print_error("[GOOGLE SAFE BROWSING] MALICIOUS URL FOUND: "+url)
 	else:
@@ -72,7 +74,8 @@ def google_safe_browsing(url):
 
 def custom_checks(url):
 	suspicious_domains = [
-						'forms.office.com'
+						'forms.office.com',
+						'web.app'
 						]
 						
 						

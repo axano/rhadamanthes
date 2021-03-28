@@ -1,128 +1,155 @@
 sender;date;subject;body;email_header (multiline);URLS
-"""Van Nuffel, Gert"" <Gert.VanNuffel@ordina.be>";Tue, 02 Mar 2021 16:34:12 +0100;Onkosten;"Dag Emmanouil,
-
-Heb jij ook een detail vd bestelling voor deze ?
-
+"""ordina.be IT Support"" <support@ordina.be>";Tue, 10 Nov 2020 14:32:40 +0100;Action Required: Verify Your Office365 Account;"
+OFFICE365
 
 
- 
+Dear guy.herremans ,
 
-Gert Van Nuffel
-F&A Dept.
- 
-T +32 15 29 58 58
-@ gert.vannuffel@ordina.be <mailto:gert.vannuffel@ordina.be> 
- 
+Due the request that you created ID: ordina.be
 
-Mechelen | Gent | Lummen | Windhof(L)
-www.ordina.be <https://www.ordina.be/>  / E-mail disclaimer <https://www.ordina.be/mailfooter/disclaimer.htm> 
- 
-Follow Ordina:
 
- <https://www.facebook.com/lifeatordinabe> 
+We need to validate you as the owner of this email  <mailto:guy.herremans@ordina.be>  guy.herremans@ordina.be.
 
- <https://www.linkedin.com/company/ordinabelgium> 
 
- <https://www.youtube.com/channel/UCYP5uoJpDFU4v47ElI_k6xg> 
+This validation valid until 10th November..
+  
 
- <http://www.top-employers.com/nl-BE/companyprofiles/BE/ordina-belgium-NV/> 
 
-​
+
+ <https://qvaayxstrr.web.app/#guy.herremans@ordina.be> CONFIRM NOW >>>
 
  
 
-";"Received: from DB8PR10MB3353.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:10:11d::22)
- by PR3PR10MB4221.EURPRD10.PROD.OUTLOOK.COM with HTTPS; Tue, 2 Mar 2021
- 15:34:13 +0000
-Authentication-Results: ordina.be; dkim=none (message not signed)
- header.d=none;ordina.be; dmarc=none action=none header.from=ordina.be;
-Received: from DBAPR10MB3995.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:10:1c9::12)
- by DB8PR10MB3353.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:10:11d::22) with
+
+
+This mail was sent to  <mailto:guy.herremans@ordina.be>  guy.herremans@ordina.be.
+
+";"Received: from AM9PR10MB4263.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:20b:1fe::23)
+ by DB7PR10MB2348.EURPRD10.PROD.OUTLOOK.COM with HTTPS; Tue, 10 Nov 2020
+ 13:37:45 +0000
+Received: from AM6PR10CA0036.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:209:89::49)
+ by AM9PR10MB4263.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:20b:1fe::23) with
  Microsoft SMTP Server (version=TLS1_2,
- cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3890.20; Tue, 2 Mar
- 2021 15:34:12 +0000
-Received: from DBAPR10MB3995.EURPRD10.PROD.OUTLOOK.COM
- ([fe80::6007:344f:92de:18ef]) by DBAPR10MB3995.EURPRD10.PROD.OUTLOOK.COM
- ([fe80::6007:344f:92de:18ef%5]) with mapi id 15.20.3890.028; Tue, 2 Mar 2021
- 15:34:12 +0000
-Content-Type: application/ms-tnef; name=""winmail.dat""
-Content-Transfer-Encoding: binary
-From: ""Van Nuffel, Gert"" <Gert.VanNuffel@ordina.be>
-To: ""Perselis, Emmanouil"" <Emmanouil.Perselis@ordina.be>
-Subject: Onkosten
-Thread-Topic: Onkosten
-Thread-Index: AdcPeVsFwBlEGg6gQf+RKeZ017D0eg==
-Date: Tue, 2 Mar 2021 15:34:12 +0000
-Message-ID: 
- <DBAPR10MB3995343AE7EB6FEE1AFF06168D999@DBAPR10MB3995.EURPRD10.PROD.OUTLOOK.COM>
-Accept-Language: en-US
-Content-Language: en-US
-X-MS-Has-Attach: yes
-X-MS-Exchange-Organization-SCL: -1
-X-MS-TNEF-Correlator: 
- <DBAPR10MB3995343AE7EB6FEE1AFF06168D999@DBAPR10MB3995.EURPRD10.PROD.OUTLOOK.COM>
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3541.21; Tue, 10 Nov
+ 2020 13:37:45 +0000
+Received: from VE1EUR02FT059.eop-EUR02.prod.protection.outlook.com
+ (2603:10a6:209:89:cafe::f) by AM6PR10CA0036.outlook.office365.com
+ (2603:10a6:209:89::49) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3541.21 via Frontend
+ Transport; Tue, 10 Nov 2020 13:37:44 +0000
+Authentication-Results: spf=pass (sender IP is 149.72.247.46)
+ smtp.mailfrom=sendgrid.net; ordina.be; dkim=pass (signature was verified)
+ header.d=sendgrid.net;ordina.be; dmarc=fail action=quarantine
+ header.from=ordina.be;compauth=fail reason=000
+Received-SPF: Pass (protection.outlook.com: domain of sendgrid.net designates
+ 149.72.247.46 as permitted sender) receiver=protection.outlook.com;
+ client-ip=149.72.247.46; helo=wrqvftnz.outbound-mail.sendgrid.net;
+Received: from wrqvftnz.outbound-mail.sendgrid.net (149.72.247.46) by
+ VE1EUR02FT059.mail.protection.outlook.com (10.152.13.15) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3541.18 via Frontend Transport; Tue, 10 Nov 2020 13:37:41 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=from:to:subject:mime-version:content-type:content-transfer-encoding;
+	s=smtpapi; bh=4Of/Tsa6Jc37Jcnab9kw/vszqN2aSh5K7u7Ttf7GzQs=; b=as
+	m47ymTlEYI0okSGLUBwEcaDAKYTdY+Brt9DFo4otNSKXI6etVVb8PCR21miYmobP
+	m1MaqOcHwiWYBYIwIA72Lm3LR/jz5sWrTPv27Hr2SCWWG8uSUVxMLHeP/FKCRnmS
+	1ghpEOO4BtQSNK0SiLzM3tqZ7Zu1zfr1rgaCIaYds=
+Received: by filter2092p1las1.sendgrid.net with SMTP id filter2092p1las1-32039-5FAA9678-14
+        2020-11-10 13:32:40.358257257 +0000 UTC m=+407545.841201526
+Received: from peakretreats.co.uk (unknown)
+	by ismtpd0105p1iad2.sendgrid.net (SG) with ESMTP id IhCfiLvFSgWSV8BR51CJgQ
+	for <guy.herremans@ordina.be>; Tue, 10 Nov 2020 13:32:40.230 +0000 (UTC)
+From: ""ordina.be IT Support"" <support@ordina.be>
+To: guy.herremans@ordina.be
+Subject: Action Required: Verify Your Office365 Account
+Date: Tue, 10 Nov 2020 13:32:40 +0000 (UTC)
+Message-ID: <20201110213240.28C28E56A9B0347B@ordina.be>
 MIME-Version: 1.0
-X-MS-Exchange-Organization-MessageDirectionality: Originating
-X-MS-Exchange-Organization-AuthSource: DBAPR10MB3995.EURPRD10.PROD.OUTLOOK.COM
-X-MS-Exchange-Organization-AuthAs: Internal
-X-MS-Exchange-Organization-AuthMechanism: 04
-X-Originating-IP: [78.23.154.178]
-X-MS-Exchange-Organization-Network-Message-Id: 
- 40c11c24-c42a-416f-c6d0-08d8dd90a156
-X-MS-PublicTrafficType: Email
-Return-Path: Gert.VanNuffel@ordina.be
-X-MS-Exchange-Organization-ExpirationStartTime: 02 Mar 2021 15:34:12.5234
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-SG-EID: M+jzL+3NRj7PQ6G3Bn4R88yWK7AQVBJVxJjIWdF81YWm8noNUKRPou/t8RFv6sLKOa8b/T6oyP+z7j
+ zROvmi77UQY+JMwOe38oWCYxcC1umZ6nwVAiAtzOJMpn2WAeGzji0jl7ToxAQGLyBUc8a8xq8gKUin
+ yitoXnr/Sw0dUkoe24wgliTsPV6F8GiI/fJ54280YAtusSEtR78PagvsZK0/pgCvroomOXUCmOsNPo
+ U=
+X-Entity-ID: s+K+5x9xp8GD1hHe0m00xg==
+Return-Path: bounces+7084217-320d-guy.herremans=ordina.be@sendgrid.net
+X-MS-Exchange-Organization-ExpirationStartTime: 10 Nov 2020 13:37:43.8716
  (UTC)
 X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
 X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
 X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
-X-MS-Office365-Filtering-Correlation-Id: 40c11c24-c42a-416f-c6d0-08d8dd90a156
-X-MS-TrafficTypeDiagnostic: DB8PR10MB3353:
-X-MS-Exchange-MinimumUrlDomainAge: top-employers.com#4431
-X-MS-Oob-TLC-OOBClassifiers: OLM:2150;
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 66be7d7b-9084-4dbb-3007-08d8857dcd8a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: a254b169-0a6b-47f9-af4c-169704421c2e:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: 
+ VE1EUR02FT059.eop-EUR02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 66be7d7b-9084-4dbb-3007-08d8857dcd8a
+X-MS-TrafficTypeDiagnostic: AM9PR10MB4263:
+X-MS-Oob-TLC-OOBClassifiers: OLM:6790;
+X-MS-Exchange-Organization-SCL: -1
 X-Microsoft-Antispam: BCL:0;
 X-Forefront-Antispam-Report: 
- CIP:255.255.255.255;CTRY:;LANG:nl;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DBAPR10MB3995.EURPRD10.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:;DIR:INB;
-X-MS-Exchange-AntiSpam-MessageData: 
- =?us-ascii?Q?KEST7R2gdw0VIqJHSDMQdjqcg5jVYl1BxiCD88YWnFAKULZr2DPsRgXwtxn2?=
- =?us-ascii?Q?ZPNxpTTLUTXioySnHD/5fd9KTPQ0+SwlwacdCvcZ75ZkJClfbo0P78UF6Q5E?=
- =?us-ascii?Q?qPAXU5FeUbgozbcebGCRBuP63/gwgrm22h6uJtsy4j8Y4jZ8WgDoJ/hgf731?=
- =?us-ascii?Q?om4U4z0zvGwljMw7C5B7ZFmvkRPC7Gfwe3aGTqzp2NcmvQnjzxjpSyplyOpE?=
- =?us-ascii?Q?OE+8I8LwKIkiZoHYSyyYZ2mzqeTl+I/zw1oMxcVBo4Xu03Sj53jQZfk4uxcz?=
- =?us-ascii?Q?5lsADxFxro4s/4j3cfpdbqnd1BIi8YAcBNP/Ti3A/6iFmWLK1CXu0cjQr2Wg?=
- =?us-ascii?Q?x7ixvvORKX6doHbPj47TEHjQZ1WIGQpJdrurpSEjlyv1Z9zucJKhDHdHF2Wr?=
- =?us-ascii?Q?h6OrzmqYZfOr8yeHnDD9Uq3xS+WYeM4kZL+0jge+mjr8yyGj5klqHJw4/pwx?=
- =?us-ascii?Q?8+Kd9zjwj0zi5VB7KGVKe2waEJRHubu8OgBTjCUTBCDoIM9tBP9bjA+QgQ+D?=
- =?us-ascii?Q?gmAyvvs9QQK1IxFS68siNB1vG70sg7zpEuwrMCZZx/MjhrWeauCMNzyhd7mY?=
- =?us-ascii?Q?cT/hqbx06/qKgJWc/JnSZbNM7JknHvt8U6AnYHrAep7Du45h/MTMcyLcdzqH?=
- =?us-ascii?Q?UdQBh72YKwf5/jG2bHDXNayHtRrG8Zse70ch/jOwibUAHUHsgH/9REc6LZDH?=
- =?us-ascii?Q?XscNzOAEnzkyJQwOmQjAwfYIK+gRvHJKfemKIS4y1kPmW7HZ2pttZ2kXYwMZ?=
- =?us-ascii?Q?ZrpDJyX0MzU/7LEq1qqwLnPuEon4CUPiH38ALIlUUKGbJzBm8pKFoC3fW9KD?=
- =?us-ascii?Q?mtmU3R7Tc6FvyFYOx3hF87wDkT95kQO/05+J+syr7wKKAxllVme/zIEUCCV5?=
- =?us-ascii?Q?/a9NmmgSx79+XSLcUhmnGe2TSCthHLXnDOCdxAXyka0pS0inJYnVT3K7uuHs?=
- =?us-ascii?Q?9YaH2Tb7yADD8AqqhR9M05+kzyaIdwQSGGUnnWthLt7MRKsuQkg/RiinIik4?=
- =?us-ascii?Q?ae+5Tj6rCksJR2oovd5VdrmDa6GXIOGJHhCOiULZmd4ntwkly8HJ4omicqsa?=
- =?us-ascii?Q?E3JW7Qu0wAsG5/awP+XixAOo5qkGaTiZotDZ+avpB/lwMBLIHa8FTOFq+O1D?=
- =?us-ascii?Q?LtB2iJfD9rs5RSVnA2hKGAzaWg87Zkj1YzcvdkXNnrgbx4gtXK1l+Lcu4lOg?=
- =?us-ascii?Q?x72LrvJ4TIa5UAd8r1xUhqSSeuR9XcataAnhpf3DiNQamTRYY4Hgp4EO12vb?=
- =?us-ascii?Q?8a75sWU+vVtyrIZ/zu0Kluohgt9KacWS/oAm1gPm0Tq4y+QhNrB27FouYC8L?=
- =?us-ascii?Q?wQJ3i7HVeFzPmW58/82qUkc4?=
-X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Mar 2021 15:34:12.4185
+ CIP:149.72.247.46;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKA;H:wrqvftnz.outbound-mail.sendgrid.net;PTR:wrqvftnz.outbound-mail.sendgrid.net;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 10 Nov 2020 13:37:41.5877
  (UTC)
-X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Network-Message-Id: 66be7d7b-9084-4dbb-3007-08d8857dcd8a
 X-MS-Exchange-CrossTenant-Id: a254b169-0a6b-47f9-af4c-169704421c2e
-X-MS-Exchange-CrossTenant-AuthSource: DBAPR10MB3995.EURPRD10.PROD.OUTLOOK.COM
-X-MS-Exchange-CrossTenant-AuthAs: Internal
-X-MS-Exchange-CrossTenant-Network-Message-Id: 40c11c24-c42a-416f-c6d0-08d8dd90a156
-X-MS-Exchange-CrossTenant-MailboxType: HOSTED
-X-MS-Exchange-CrossTenant-UserPrincipalName: Wy3pbf1U7nFwSK4iNhizh2QzJfRq9TTqaVCQcT/bTHI4udRiahIBCRiImiHlh9eauUO1Fe8n2KvwxxMSkKhxy9ovg5+VwLYyELh60DBIAko=
-X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB8PR10MB3353
-X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.9519531
-X-MS-Exchange-Processed-By-BccFoldering: 15.20.3890.029
+X-MS-Exchange-CrossTenant-AuthSource: 
+ VE1EUR02FT059.eop-EUR02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM9PR10MB4263
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.3862568
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3541.025
 X-Microsoft-Antispam-Mailbox-Delivery: 
-	ucf:0;jmr:0;auth:0;dest:I;ENG:(750129)(520011016)(706158)(944506458)(944626604);
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
 X-Microsoft-Antispam-Message-Info: 
-	kIcfDzVERTa2OAknDgTZI3QO3eTlxZkZoNt8b693VuPAa8T/kSB1FrmNzLH/jbTPI5/W4XuZcMP8FzEvXufUFgT8U4SURT3BUZBcajiy0uSekuswQk9MAeYBY9fgdi2CsPxujtrc5LZFVcmZAQFRpmNzkiNeVkgkg+eKtFkV8PD1+IhEwWKkTSNYYEr9NJmU3PVO2+9KNoSoCT7QXui/6lXTR6TSSa9Jqcgt7Na+3vtNeL2diPVzziraL3QTDYTPbXCZ2HxmwNf/XScrBt8/vPs60j/ua6izqVWZS1ulcJ01r6F8KcwnGPvAyLPibdkzbm6HBlfHC9AykzVUkAnYTz1O1bl88yzANNDVnuZr1xiVm82T3OW7xOm160fUueCaI3+ziC9w5Z8MZVW07Zbd4F+Jv3V08SxaYKkRwHlRoBUeHHYZ2dn5QIgERPZ9P54NdVnR12NNvEBZaGsr92Vy/2nbAtC1PdSnDP5i1b+yjl8GZK3Jd5XmSg9gcqC24wJH4gX5WiEXp4SQ3t7JxypAWyIe0r9/dCDkN9IIr+YafvPXw1pBHzlPHAuDvpWClV3E26F2dUDETjKqQ/u0cxV+dnC94xS/U00arbnMo1Slc0fZd48UjFMK5YP71qVr/tjS
-date: Tue, 02 Mar 2021 16:34:12 +0100
+	=?us-ascii?Q?uf4RRjbT+wkTfetTXTwHFGfbC4xNIlmCM3gkQquyilYWr8LIKmlteo2iMK90?=
+ =?us-ascii?Q?3nOEVbCRX38zjyBkYqiI9QEQl21trN8Ud8zyxXM5/ZQ0tOee2GyXuvZyglCo?=
+ =?us-ascii?Q?iks+SeZBo4Sgd15NoAoCxHZGH/Y+WQRJcxse7RLT8cWq/X4rxsWJCfTZkQi/?=
+ =?us-ascii?Q?L4B3Mj9fL3bgGf+Oi7uVx+r8nONdJciPC537S4SJ4GVIIwRktSb2PEVSr3Ik?=
+ =?us-ascii?Q?+yjMkA4auiU0YiTmjFZhPvtUmd6LhL7h0wsrO0Fblw+c2nfjtkDSrFJLKE7K?=
+ =?us-ascii?Q?KCQyTfizrNxMpYdqa8CQDd3IiKyNCwhw1nHPE+WOlRoU3BCn8Tl4m6ra5JQY?=
+ =?us-ascii?Q?3wv4+LAgRLLBGt1Ul3D0DMGym1LFBUAJVAcrjncHGOoCGijpOEgW6VEX1jTk?=
+ =?us-ascii?Q?l5jDUCmYUrnKZbDZylS62aNIRYG47AZSA+lL+1e3QkIdTqWeg033muXn/cGo?=
+ =?us-ascii?Q?IQ4OWrGMMeLiusFRZryvc3oNDwY+Ftq1KqmbC32M3mPZE04TD49tLNLSTN1t?=
+ =?us-ascii?Q?o/6NPD8jzP4TXawNDI5z8EJLMJ9k0yYnQgFRC1BoTn0q9xbX7DKlzqVfpcwc?=
+ =?us-ascii?Q?yvW61TMZuTQKEHu3w74QXHZC7G5uBJ0lZU8yT2KgjLbdL1mUYsd7YD2PGwcx?=
+ =?us-ascii?Q?y/8kMR6KthqhkVnL+f0aZkZv6/qmAhIdt+jXavm1Jm5uigE1lFnKL+q2AWo9?=
+ =?us-ascii?Q?bHbQEBvToHUE8PiYBufBSNFUKWuiNltQjG6onK2soaZb+FWXk/qI8qAieMe3?=
+ =?us-ascii?Q?IOjv5SZCJAAn49TgQ8n4LSPB2QHk6mLKOxiXngn9tCF1QGUzID0QebMvIIM0?=
+ =?us-ascii?Q?V1FLySm65Ja0aVXYhy6zX3PbJB9OT09ZT2GYyFGpZrQjZdXGdiGqjTZaFvF9?=
+ =?us-ascii?Q?gbit0LXc5MTDlN1TrBopuRo2ZV/ZFSoxhwe5gaIWKDwoqqU6lI2j/kibxU0x?=
+ =?us-ascii?Q?p+wRv/jRPz2AEvz0Dp/XkD73YCU8s+4JI6w5WxhZqkwVMxSOw2dh6m7gQy9S?=
+ =?us-ascii?Q?X5YxJLJpEKZ+o068GkQO4HM0+XitLLI8eDQuLVLZQCMDdVTPUnOXi+FNvQFb?=
+ =?us-ascii?Q?+Mh91u6yZ25pvukn8HBRTu5KHe898FNd3SeIJPUXYuQfvdEbsDO1MCXRHgFS?=
+ =?us-ascii?Q?iP7ydNdBGZ0tIG+G2qu9CFlZUZVzkomPqF7G1DhV6F5Ch6UaT+Lb0wUeCspz?=
+ =?us-ascii?Q?eiUWJu8Ec+6xXBVzsFebYiBSt+ceBEPgAY4qBkqXo8pt1BpG9Ekb2510C6/j?=
+ =?us-ascii?Q?C74hT31UeliHiJzninsY+yxxkVCuCjsccR6fdqntrK/XCjZAkTmX60u/9ZsY?=
+ =?us-ascii?Q?5ZYgPNnuh4JNMFFbovKfOAerISPwoQ055ySy2kwNOWAhWL2VC+raHaA1c6Dr?=
+ =?us-ascii?Q?MlH/3E+OYG7xMj8LVoo/3Tc8rXjkp1ApkftmqUPdBLlAp+trn73T7v/xrDzE?=
+ =?us-ascii?Q?5UvGpM7yc2hpLquQQepQmkMIN4puvaR+xwWZcpLcG2TFyW6iAh7d5syeEa48?=
+ =?us-ascii?Q?Cxp2utQMecNH51xdVgbsntOT6VNtmtGzUlSiXVlkfgvKIz9kcIhJcoMwpZ9c?=
+ =?us-ascii?Q?b5tFAvzh8O4fTpZAdg9iHY41C5+Mw77DMGYZxKSGFw+XTCMUuXCTDruAaep1?=
+ =?us-ascii?Q?ROEdMrjLIdZExq+BGlvp/dM/xK5w6AINdnh+Xv0XYI3oD+q8dKDrJd6rBW0C?=
+ =?us-ascii?Q?+p0MeBRbf2iek20+fbgwEd7tFdzeQYTgdfqXYmBqwTyDlubAm99O5rczdv0g?=
+ =?us-ascii?Q?qj+/flLjvuM+G6ESuZIqkhDRcr2V84/2+dxQRJVyzP5BuxhSxP+ybdw9FV2j?=
+ =?us-ascii?Q?Cp5PZrTaMMC3HOqniLPXGPG9C4Twd48N+dTHrsQ31R0z2BZvXulAKu6oJ6Cy?=
+ =?us-ascii?Q?qzLqxa1VsZmnim2Xv2xhA9Eh8VM50tD+pbKjC78nj05EEnIxZTad5GNGGIGA?=
+ =?us-ascii?Q?jYHYMpSZ6wztJrD+03iFclklanAWk6L5LI+q1G8e/VYDyI3Z3EwZt8HmVAub?=
+ =?us-ascii?Q?QIwVqrKhjLlbJK+NEn3xGxat0MjW8N4hJGTRCtHJduhWETBIiOx7LicbIqMR?=
+ =?us-ascii?Q?/T3NulDasB/eqGeBpUQJQjH9jSU4SfiiDEchbuYxy3JdHFZ1EMo4RAghTDay?=
+ =?us-ascii?Q?XubEaBRbAC1gbUTSeoYhWATfGqUy2CkKzjtTJJGagz/5rGBPwk+TYmz/ChaZ?=
+ =?us-ascii?Q?CPb94OYEVJ3KG86kwatheEyXknTQbmAckocumHwnU701pR75H+dJSoYuzVQm?=
+ =?us-ascii?Q?+AgIwBmHBls/Idfzn66Fd/A0H1a6SWTebSlLk19yG1Nu+kUac8YCjxsCXzmQ?=
+ =?us-ascii?Q?1PxtgBRwBjYUaoOZ1lVfkTTW/JoH+BCGWHrufeooYJpLLriDteB4mkbbEnMZ?=
+ =?us-ascii?Q?cHZtwdMGbeM3grq4EuMQ/qNDZYav0vP2HON4k9i3AOxIWMyx2ceMxQG5Bq/p?=
+ =?us-ascii?Q?Jr6CETszn2137ODyp/uAEtQd7xbc/l58NQ9dBPnjmA7kklRVNjiEugqNiWn5?=
+ =?us-ascii?Q?Ryyec+uFUmnuQu1KqqbUUH8DoCmtMoGpe4nt?=
+date: Tue, 10 Nov 2020 14:32:40 +0100
 
-";['www.ordina.be', 'https://www.ordina.be/', 'https://www.ordina.be/mailfooter/disclaimer.htm', 'https://www.facebook.com/lifeatordinabe', 'https://www.linkedin.com/company/ordinabelgium', 'https://www.youtube.com/channel/UCYP5uoJpDFU4v47ElI_k6xg', 'http://www.top-employers.com/nl-BE/companyprofiles/BE/ordina-belgium-NV/']
+";['ordina.be', 'https://qvaayxstrr.web.app/#guy.herremans@ordina.be']

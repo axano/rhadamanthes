@@ -48,7 +48,7 @@ def main(path_to_email):
 	check_email_headers_and_dmarc(email)
 	
 	# AI starts here
-	
+	os.system()
 	end()
 	
 	
