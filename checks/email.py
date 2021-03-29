@@ -32,18 +32,16 @@ def check_dmarc(email):
 def check_reply_to_address(email):
 	header = str(email.header)
 	sender = str(email.sender)
-
-	match = re.search(r'^Reply-To:.*', header, re.MULTILINE)
-	try:
-		results = str((match.group(0)))
-	except:
+	reply_to = str(email.reply_to)
+	if reply_to == "":
 		print_success("Reply-to header is not present.")
 		return
-
-	if not results == "":
-		print_error("REPLY-TO HEADER IS SET WHICH MIGHT INDICATE THAT A SPOOFED EMAIL IS USED")
-		print_error("SENDER: "+sender)
-		print_error("REPLY-TO HEADER: "+results)
+	if re.search('<(.*)>',reply_to).group(1) == email.sender:
+		print_success("Reply-to header is the same as the sender.")
+		return
+	print_error("REPLY-TO HEADER IS SET WHICH MIGHT INDICATE THAT A SPOOFED EMAIL IS USED")
+	print_error("SENDER: "+sender)
+	print_error("REPLY-TO HEADER: "+reply_to)
 	# if return path is not equals to sender error out
 
 

@@ -6,6 +6,7 @@ import os.path
 import csv
 import glob
 import base64
+import re
 
 from visual.prints import print_success, print_info, print_error, print_debug
 
@@ -31,6 +32,7 @@ class Email:
 	date = ""
 	body = ""
 	header = ""
+	reply_to = ""
 	attachments = []
 
 	# https://pypi.org/project/eml-parser/
@@ -44,6 +46,7 @@ class Email:
 		parsed_eml = ep.decode_email_bytes(raw_email)
 		dict = ep.parse_email()
 		json_results = json.loads(json.dumps(parsed_eml, default=json_serial))
+		print_debug(str(json_results))
 		self.sender = json_results['header']['from']
 		self.date = json_results['header']['date']
 		self.subject = json_results['header']['subject']
@@ -51,7 +54,10 @@ class Email:
 		self.header = json_results['header']
 		self.urls = extractor.find_urls(self.body)
 		self.sender_domain =json_results['header']['from'].split('@')[1][:-1]
-
+		try:
+			self.reply_to = json_results['header']['header']['reply-to']
+		except:
+			self.reply_to = ""
 		if 'attachment' in dict:
 			os.chdir(os.path.dirname(__file__) + "/../temp")
 
@@ -71,6 +77,7 @@ class Email:
 
 
 		msg = extract_msg.Message(path_to_email)
+		print_debug(str(msg.header))
 		self.sender = msg.sender
 		self.date = msg.date
 		self.subject = msg.subject
@@ -78,6 +85,13 @@ class Email:
 		self.header = msg.header
 		self.urls = extractor.find_urls(self.body)
 		self.sender_domain = msg.sender.split('@')[1][:-1]
+
+		match = re.search(r'^Reply-To:.*', str(self.header), re.MULTILINE)
+		try:
+			self.reply_to = str((match.group(0)))
+		except:
+			self.reply_to = ""
+
 		# Useless data
 		# self.main_properties = msg.mainProperties
 

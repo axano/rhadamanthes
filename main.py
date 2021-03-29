@@ -79,5 +79,5 @@ def debug():
 	end()
 
 
-main()
-#debug()
+#main()
+debug()
